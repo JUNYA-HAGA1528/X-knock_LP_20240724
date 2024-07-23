@@ -1,0 +1,14 @@
+@use "global" as *;
+
+.header{
+    background-color: #01C48C;
+    height: rem(40);
+    display: flex;
+    align-items: center;
+    padding-left: rem(40);
+}
+
+.header p {
+    color: $white;
+    font-size: rem(16);
+}

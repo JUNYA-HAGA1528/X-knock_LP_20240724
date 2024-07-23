@@ -1,0 +1,202 @@
+@use "global" as *;
+
+.fv{
+    background-image: url('../images/common/fv-bg.png'); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.fv__inner{
+    position: relative;
+}
+
+.fv__inner::before {
+    background-image: url(../images/common/fv-bg2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    content: "";
+    bottom: rem(80);
+    right: calc(50% - min(50%, rem(850)));
+    width: rem(1014);
+    height: 100%;
+    z-index: -1;
+} 
+
+
+/*fv__head*/
+.fv__head{
+    padding-left: 4.17%;
+    padding-right: 3.82%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.fv__head-logo{
+    margin-top: rem(19);
+    width: rem(356);
+    height: rem(68);
+}
+
+.fv__head-content{
+    text-align: center;
+    background-color: #F2F2F2;
+    color: #2F3A67;
+    font-weight: $bold;
+    padding: 0 rem(22) rem(14);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), /* メインの影 */
+                0 6px 20px rgba(0, 0, 0, 0.1); /* 追加の影で立体感を強調 */
+    border-radius: rem(5);           
+}
+
+.fv__head-text{
+    font-size: rem(16);
+    line-height: 2.5;
+}
+
+.fv__head-wrapper{
+    display: flex;
+    gap: 0 rem(20);
+}
+
+.fv__head-button{
+    display: inline-block;
+    background-color:#00A88B ;
+    color: $white;
+    font-size: rem(14);
+    letter-spacing: 0.34;
+    border-radius: rem(50);
+    height: rem(34);
+}
+
+.fv__head-button--first{
+    padding: 0 rem(46);
+}
+
+.fv__head-button--second{
+    padding: 0 rem(33); 
+}
+
+.fv__head-button--third{
+    padding: 0 rem(40);
+    color: #2F3A67;
+    background-color: inherit;
+    border: solid 1px  #2F3A67;
+}
+
+
+
+
+
+
+
+
+/*fv__center*/
+.fv__center{
+    position: relative;
+}
+
+.fv__center::before {
+    background-image: url(../images/common/fv__center-img.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    content: "";
+    bottom: rem(50);
+    right: calc(50% - min(50%, rem(700)));
+    width: rem(789);
+    height: rem(350);
+    z-index: 100;
+} 
+
+.fv__center-wrapper{
+    max-width: rem(1180);
+    margin: rem(110) auto auto auto;
+    font-weight: $bold;
+
+}
+
+.fv__center-subtitle{
+    background-color: $white;
+    border-radius: rem(5);
+    display: inline-block;
+    padding: rem(8) rem(26);
+    font-size: rem(32);
+}
+
+.fv__center-sell{
+    color: #01C48C;
+}
+
+.fv__center-use{
+    color: #1A6AA9;
+}
+
+.fv__center-title{
+    font-size: rem(48);
+    color: #01C48C;
+    margin-top: rem(10);
+    margin-left: rem(24);
+}
+
+.fv__center-logo{
+    width: rem(252);
+    height: rem(252);
+    margin-top: rem(40);
+    margin-left: rem(24);
+}
+
+.fv__center-img{
+    width: rem(789);
+    height: rem(349);
+}
+
+
+
+
+/*fv__bottom*/
+.fv__bottom{
+    margin-top: rem(36);
+}
+
+.fv__bottom-wrapper{
+    padding-left: 7.85%;
+    padding-right: 1.4%;
+}
+
+.fv__bottom-left{
+    display: flex;
+    gap: 0 rem(23);
+}
+
+.fv__bottom-left img{
+    width: rem(135);
+    height: rem(135);
+}
+
+.fv__bottom-button{
+    text-align: center;
+    margin-top: rem(-22);
+}
+
+.fv__bottom-box button {
+    font-size: rem(10);
+    font-weight: $bold;
+    font-family: "Noto Sans JP", sans-serif;
+    background-color: $white;
+    color: #01C48C;
+    width: rem(114);
+    padding: rem(3.5) 0;
+    border-radius: rem(50);
+}
+
+.fv__bottom-text{
+    padding-top: rem(10);
+    text-align: center;
+    font-size: rem(14);
+    font-weight: $bold;
+    font-family: "Noto Sans JP", sans-serif;
+}

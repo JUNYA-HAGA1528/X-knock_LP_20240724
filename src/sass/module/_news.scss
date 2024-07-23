@@ -1,0 +1,30 @@
+@use "global" as *;
+
+.news{
+    margin-top: rem(100);
+    background-color: #DFEED7;
+    text-align: center;
+    background-image: url('../images/common/news-bg.png'); 
+    background-position: center bottom; /* 中央の下に配置 */
+    background-repeat: no-repeat;
+    background-size: rem(937) rem(417); /* 幅を937px、高さを417pxに設定 */}
+
+.news__title{
+    padding-top: rem(81);
+    font-size: rem(42);
+}
+
+.news__wrapper{
+    max-width: rem(820);
+    margin: rem(30) auto auto auto;
+    padding-bottom: rem(234);
+}
+
+.news__text{
+    background-color: $white;
+    color: $black;
+    font-size: rem(20);
+    font-weight: $bold;
+    line-height: 2;
+    padding: rem(56) rem(153);
+}

@@ -1,0 +1,38 @@
+@use "global" as *;
+
+.section-title{
+	display: flex;
+	gap: 0 rem(28);
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+}
+
+.section-title__en{
+	font-family: $second-font-family;
+	font-size: rem(32);
+	font-weight: $bold;
+    @include mq(md){
+        font-size: rem(20);
+    }
+}
+
+.section-title__en::first-letter {
+	text-transform: capitalize;
+}
+
+.section-title__jp{
+	font-size: rem(40);
+	font-weight: $bold;
+}
+
+.section-title__jp span {
+	font-size: rem(48);
+}
+
+.section-left__img,
+.section-right__img{
+	margin-top: rem(35);
+	width: rem(132);
+	height: rem(24);
+}

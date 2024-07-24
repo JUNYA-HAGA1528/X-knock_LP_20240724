@@ -1,0 +1,38 @@
+@use 'global' as *;
+
+.merit-cards{
+    @include mq(md){
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+.merit-cards__item{
+    background-color: $white;
+    @include mq(md){
+        max-width: calc(50% - rem(60) * 1 / 2 );
+        width: 100%;
+    }
+}
+
+.merit-cards__item + .merit-cards__item{
+    margin-top: rem(40);
+    @include mq(md){
+        margin-top: 0;
+        margin-left: rem(60);
+    }
+}
+
+/* 枚数が増えたときのための処理 */
+.merit-cards__item:nth-child(2n + 1){
+    @include mq(md){
+        margin-left: 0;
+    }
+}
+
+/* 枚数が増えたときのための処理 */
+.merit-cards__item:nth-child(n + 3){
+    @include mq(md){
+        margin-top: 2.5rem;
+    }
+}

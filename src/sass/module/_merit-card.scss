@@ -1,0 +1,232 @@
+@use 'global' as *;
+
+.merit-card__title{
+    background-color: #3BD2A6;
+    color: $white;
+    font-size: rem(24);
+    font-weight: $bold;
+    padding: rem(21) 0;
+    @include mq(md){
+        font-size: rem(40);
+        padding: rem(28.5) 0;
+    }
+}
+
+.merit-card__title span {
+    position: relative;
+  }
+  
+.merit-card__title span::after {
+    background-image: url(../images/common/merit-arrow.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: "";
+    position: absolute;
+    top: 130%;
+    left: rem(-70);
+    width: rem(60);
+    height: rem(93);
+    transform: translateY(-50%);
+    transition: 0.2s background-color;
+}
+
+.merit-card__title--red{
+    background-color: #C40176;
+}
+
+.merit-card__title--red span {
+    position: relative;
+  }
+  
+.merit-card__title--red span::after {
+    background-image: url(../images/common/merit-arrow-red.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: "";
+    position: absolute;
+    top: 130%;
+    left: rem(-70);
+    width: rem(60);
+    height: rem(93);
+    transform: translateY(-50%);
+    transition: 0.2s background-color;
+}
+
+.merit-card__container{
+    box-shadow: rem(2) rem(2) rem(10) rgba(0, 0, 0, 0.25);
+    padding: rem(50) rem(30) rem(30);
+    @include mq(md){
+        padding: rem(76) rem(44) rem(44);
+    }
+}
+
+.merit-card__img{
+    width: rem(240);
+    height: rem(153);
+    margin: auto;
+    @include mq(md){
+        width: rem(358);
+        height: rem(229);
+    }
+}
+
+.merit-card__img img {
+    aspect-ratio: 240/153;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    @include mq(md){
+        aspect-ratio: 358/229;
+    }
+}
+
+.merit-card__img--red{
+    width: rem(183);
+    height: rem(144);
+    margin: auto;
+    @include mq(md){
+        width: rem(288);
+        height: rem(228);
+    }
+}
+
+.merit-card__img--red img {
+    aspect-ratio: 183/144;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    @include mq(md){
+        aspect-ratio: 288/228;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.merit-card__content {
+    margin-top: rem(40);
+    display: flex;
+    flex-direction: column;
+    @include mq(md){
+        margin-top: rem(55);
+    }
+}
+
+.merit-card__wrapper {
+    margin-top: auto; /* これにより、下揃えになります */
+    padding: rem(14) rem(25);
+    @include mq(md){
+        padding: rem(20) rem(40);
+    }
+}
+
+.merit-card__sentence{
+    display: flex;
+}
+
+.merit-card__sentence + .merit-card__sentence{
+    margin-top: rem(10);
+    @include mq(md){
+        margin-top: rem(16);
+    }
+}
+
+.merit-card__icon{
+    width: rem(17);
+    height: rem(17);
+    margin-top: rem(3);
+    @include mq(md){
+        width: rem(26);
+        height: rem(26);
+        margin-top: rem(5);
+    }
+}
+
+.merit-card__text{
+    margin-left: rem(13.4);
+    font-size: rem(16);
+    font-weight: $bold;
+    text-align: left;
+    @include mq(md){
+        margin-left: rem(20);
+        font-size: rem(24);
+    }
+}
+
+
+
+
+
+
+
+.mx-pc__buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    width: 100%; 
+    margin-top: rem(40);
+    @include mq(md){
+        margin-top: rem(96);
+    }
+}
+
+.mx-pc__text {
+    font-size: rem(12);
+    color: #2F3A67;
+    font-weight: $bold;
+    text-align: center;
+    @include mq(md){
+        font-size: rem(18);
+    }
+}
+
+.mx-pc__button {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    width: rem(820);
+    padding: rem(14) 0;
+    color: $white;
+    background: #2F3A67;
+    border: 1px solid transparent;
+    font-size: rem(15);
+    font-weight: $normal;
+    cursor: pointer;
+    border-radius: rem(40);
+    @include mq(md){
+        font-size: rem(26);
+    }
+}
+  
+.mx-pc__button a{
+    opacity: 1;
+}
+  
+.mx-pc__button a:hover{
+    opacity: 1;
+}
+  
+
+.mx-pc__button span::after {
+    background-image: url(../images/common/merit-button-arrow.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: "";
+    position: absolute;
+    top: 51%;
+    right: rem(40);
+    width: rem(15);
+    height: rem(15);    
+    transform: translateY(-50%);
+    transition: 0.2s background-color;
+    @include mq(md){
+        width: rem(25);
+        height: rem(25);    
+    }
+}
+
+
+

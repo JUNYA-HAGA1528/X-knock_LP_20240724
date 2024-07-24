@@ -161,7 +161,7 @@
 
 
 
-.mx-pc__buttons {
+.merit-card__buttons {
     display: flex;
     flex-direction: column;
     align-items: center; 
@@ -172,7 +172,7 @@
     }
 }
 
-.mx-pc__text {
+.merit-card__buttons-text {
     font-size: rem(12);
     color: #2F3A67;
     font-weight: $bold;
@@ -182,7 +182,7 @@
     }
 }
 
-.mx-pc__button {
+.merit-card__button {
     position: relative;
     display: inline-block;
     text-align: center;
@@ -200,16 +200,16 @@
     }
 }
   
-.mx-pc__button a{
+.merit-card__button a{
     opacity: 1;
 }
   
-.mx-pc__button a:hover{
+.merit-card__button a:hover{
     opacity: 1;
 }
   
 
-.mx-pc__button span::after {
+.merit-card__button span::after {
     background-image: url(../images/common/merit-button-arrow.png);
     background-position: center;
     background-repeat: no-repeat;

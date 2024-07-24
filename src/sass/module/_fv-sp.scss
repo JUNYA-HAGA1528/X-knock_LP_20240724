@@ -1,0 +1,186 @@
+@use "global" as *;
+
+.fv-sp{
+    background-image: url('../images/common/fv-bg.png'); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.fv-sp__inner{
+    max-width: $max-width;
+    margin: auto;
+    padding-left: rem(16);
+}
+
+.fv-sp__logo{
+    padding-top: rem(10);
+    padding-bottom: rem(70);
+    width: rem(203);
+    height: rem(43);
+}
+
+.fv-sp__subtitle{
+    background-color: $white;
+    display: inline;
+    box-decoration-break: clone;	
+	-webkit-box-decoration-break: clone;
+    line-height: 2;
+    padding: rem(3) rem(10) rem(3) 0;
+    font-size: rem(20);
+}
+
+.fv-sp__center-sell{
+    color: #01C48C;
+}
+
+.fv-sp__center-use{
+    color: #1A6AA9;
+    padding-left: rem(-10);
+}
+
+.fv-sp__padding{
+    padding-left: rem(10);
+}
+
+.fv-sp__icon{
+    position: relative;
+}
+
+.fv-sp__icon::before {
+    background-image: url(../images/common/fv-sp__icon.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    content: "";
+    bottom: rem(-5);
+    right: calc(50% - min(45%, rem(450)));
+    width: rem(106);
+    height: rem(106);
+    z-index: 100;
+} 
+
+.fv-sp__title{
+    font-size: rem(32);
+    color: #01C48C;
+    margin-top: rem(20);
+    margin-left: rem(5);
+    position: relative;
+}
+
+.fv-sp__title::before {
+    background-image: url(../images/common/fv-sp__bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    content: "";
+    top: rem(-120);
+    right: calc(50% - min(50%, rem(950)));
+    width: rem(225);
+    height: rem(505);
+    z-index: -100;
+} 
+
+.fv-sp__title span {
+    font-size: rem(36);
+}
+
+.fv-sp__content{
+    overflow: hidden;
+}
+
+.fv-sp__bg-img {
+    width: rem(411); /* Adjust the width as needed */
+    height: rem(182); /* Adjust the height as needed */
+    margin-top: rem(60);
+    margin-left: auto;
+}
+
+.fv-sp__img {
+    width: rem(240);
+    margin-top: rem(-7);
+    margin-left: auto;
+    margin-right: rem(26);
+}
+
+.fv-sp__img img {
+    width: 100%;
+    height: auto; /* 画像のアスペクト比を維持 */
+}
+
+
+
+
+
+
+
+
+
+
+.fv-sp__bottom{
+    background-image: url('../images/common/fv-sp__bottom.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;  
+    margin-top: rem(40);  
+    padding: rem(24) 0 rem(16);
+}
+
+.fv-sp__bottom-flex{
+    display: flex;
+    gap:rem(20);
+    justify-content: center;
+}
+
+.fv-sp__bottom-flex + .fv-sp__bottom-flex{
+    margin-top: rem(23);
+}
+
+.fv-sp__bottom-icon img{
+    width: rem(100);
+    height: rem(103);
+}
+
+.fv-sp__bottom-box{
+    text-align: center;
+    margin-top: rem(-22);
+}
+
+.fv-sp__bottom-button {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    font-size: rem(7.9);
+    font-weight: $bold;
+    font-family: "Noto Sans JP", sans-serif;
+    background-color: $white;
+    color: #01C48C;
+    width: rem(86);
+    padding: rem(4.5) 0 rem(2.5);
+    border-radius: rem(50);
+}
+
+.fv-sp__bottom-button span::after {
+    background-image: url(../images/common/fv-icon-arrow.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: rem(7);
+    width: rem(7);
+    height: rem(7);
+    transform: translateY(-50%);
+  }
+
+.fv-sp__bottom-text{
+    padding-top: rem(17);
+    text-align: center;
+    font-size: rem(10.63);
+    font-weight: $bold;
+    font-family: "Noto Sans JP", sans-serif;
+}

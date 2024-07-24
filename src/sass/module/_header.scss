@@ -6,13 +6,17 @@
     align-items: center; /* 子要素を上下中央に配置 */
 }
 
-.header__inner {
+.header__inner {    
     max-width: rem(1410);
     margin: auto;
     padding: 0 rem(25);
     height: rem(40);
     display: flex; /* Flexboxを有効にする */
     align-items: center; /* 子要素を上下中央に配置 */
+    justify-content: center;
+    @include mq(md){
+        justify-content: flex-start;
+    }
 }
 
 .header p {

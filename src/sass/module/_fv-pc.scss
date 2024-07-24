@@ -1,6 +1,6 @@
 @use "global" as *;
 
-.fv{
+.fv-pc{
     background-image: url('../images/common/fv-bg.png'); 
     background-position: center;
     background-repeat: no-repeat;
@@ -8,11 +8,11 @@
     padding-bottom: rem(74);
 }
 
-.fv__inner{
+.fv-pc__inner{
     position: relative;
 }
 
-.fv__inner::before {
+.fv-pc__inner::before {
     background-image: url(../images/common/fv-bg2.png);
     background-position: center;
     background-repeat: no-repeat;
@@ -30,8 +30,8 @@
 
 
 
-/*fv__head*/
-.fv__head{
+/*fv-pc__head*/
+.fv-pc__head{
     display: flex;
     justify-content: space-between;
     max-width: rem(1380);
@@ -39,13 +39,13 @@
     padding: 0 rem(25) 0 rem(30);
 }
 
-.fv__head-logo{
+.fv-pc__head-logo{
     margin-top: rem(19);
     width: rem(356);
     height: rem(68);
 }
 
-.fv__head-content{
+.fv-pc__head-content{
     text-align: center;
     background-color: #F2F2F2;
     color: #2F3A67;
@@ -56,17 +56,17 @@
     border-radius: rem(5);           
 }
 
-.fv__head-text{
+.fv-pc__head-text{
     font-size: rem(16);
     line-height: 2.5;
 }
 
-.fv__head-wrapper{
+.fv-pc__head-wrapper{
     display: flex;
     gap: 0 rem(20);
 }
 
-.fv__head-button{
+.fv-pc__head-button{
     display: inline-block;
     background-color:#00A88B ;
     color: $white;
@@ -76,15 +76,15 @@
     height: rem(34);
 }
 
-.fv__head-button--first{
+.fv-pc__head-button--first{
     padding: 0 rem(46);
 }
 
-.fv__head-button--second{
+.fv-pc__head-button--second{
     padding: 0 rem(33); 
 }
 
-.fv__head-button--third{
+.fv-pc__head-button--third{
     padding: 0 rem(40);
     color: #2F3A67;
     background-color: inherit;
@@ -98,12 +98,12 @@
 
 
 
-/*fv__center*/
-.fv__center{
+/*fv-pc__center*/
+.fv-pc__center{
     position: relative;
 }
 
-.fv__center::before {
+.fv-pc__center::before {
     background-image: url(../images/common/fv__center-img.png);
     background-position: center;
     background-repeat: no-repeat;
@@ -117,7 +117,7 @@
     z-index: 100;
 } 
 
-.fv__center-wrapper{
+.fv-pc__center-wrapper{
     max-width: rem(1230);
     margin: rem(110) auto auto auto;
     padding: 0 rem(25);
@@ -125,7 +125,7 @@
 
 }
 
-.fv__center-subtitle{
+.fv-pc__center-subtitle{
     background-color: $white;
     border-radius: rem(5);
     display: inline-block;
@@ -133,29 +133,29 @@
     font-size: rem(32);
 }
 
-.fv__center-sell{
+.fv-pc__center-sell{
     color: #01C48C;
 }
 
-.fv__center-use{
+.fv-pc__center-use{
     color: #1A6AA9;
 }
 
-.fv__center-title{
+.fv-pc__center-title{
     font-size: rem(48);
     color: #01C48C;
     margin-top: rem(10);
     margin-left: rem(24);
 }
 
-.fv__center-logo{
+.fv-pc__center-logo{
     width: rem(252);
     height: rem(252);
     margin-top: rem(40);
     margin-left: rem(24);
 }
 
-.fv__center-img{
+.fv-pc__center-img{
     width: rem(789);
     height: rem(349);
 }
@@ -163,36 +163,36 @@
 
 
 
-/*fv__bottom*/
-.fv__bottom{
+/*fv-pc__bottom*/
+.fv-pc__bottom{
     max-width: 1440px;
     margin: rem(36) auto auto auto;
     padding: 0 rem(20);
 }
 
-.fv__bottom-wrapper{
+.fv-pc__bottom-wrapper{
     display: flex;
     justify-content: flex-end;
     gap: 0 rem(45);
 }
 
-.fv__bottom-left{
+.fv-pc__bottom-left{
     display: flex;
     gap: 0 rem(23);
 }
 
-.fv__bottom-icon img{
+.fv-pc__bottom-icon img{
     width: rem(135);
     height: rem(135);
 }
 
-.fv__bottom-box{
+.fv-pc__bottom-box{
     text-align: center;
     margin-top: rem(-22);
     ;
 }
 
-.fv__bottom-button {
+.fv-pc__bottom-button {
     position: relative;
     display: inline-block;
     text-align: center;
@@ -206,7 +206,7 @@
     border-radius: rem(50);
 }
 
-.fv__bottom-button span::after {
+.fv-pc__bottom-button span::after {
     background-image: url(../images/common/fv-icon-arrow.png);
     background-position: center;
     background-repeat: no-repeat;
@@ -220,7 +220,7 @@
     transform: translateY(-50%);
   }
 
-.fv__bottom-text{
+.fv-pc__bottom-text{
     padding-top: rem(10);
     text-align: center;
     font-size: rem(14);
@@ -229,7 +229,7 @@
 }
 
 
-.fv__bottom-right img {
+.fv-pc__bottom-right img {
     margin-top: rem(-100);
     width: rem(510);
     height: rem(213);

@@ -1,0 +1,74 @@
+@use "global" as *;
+
+.company-card {
+    color: #00845F;
+    font-weight: $bold;
+    border-radius: rem(5);
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto; /* カードの高さを揃える */
+    min-height: 100%; /* 高さを揃える */
+    box-sizing: border-box; /* パディングとボーダーを含めたサイズ調整 */
+}
+
+
+.company-card__title {
+    text-align: center;
+    font-size: rem(17.11);
+    font-weight: bold;
+    line-height: 1.35;
+    @include mq(md){
+        font-size: rem(18);
+    }
+}
+
+.company-card__wrapper {
+    margin-top: rem(10);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* 下揃えにする */
+    flex-grow: 1; /* ラッパー部分を可能な限り拡張 */
+}
+
+.company-card__list {
+    display: flex;
+    font-size: rem(17.11);
+    line-height: 1.43;
+    @include mq(md){
+        font-size: rem(18);
+    }
+}
+
+.company-card__list + .company-card__list{
+    margin-top: rem(7);
+}
+
+.company-card__list dt {
+    width: 20%;
+}
+
+.company-card__list dd {
+    width: 77%;
+}
+
+.company-card__list a {
+    transition: 0.3s;
+    border-bottom: solid 1px #00845F;
+    display: inline-block;
+    line-height: 1; /* 行の高さを調整してボーダーを文字に近づける */
+}
+
+.company-card__list a:hover{
+    opacity: 0.3;
+}
+
+.company-card__text {
+    margin-top: rem(18);
+    font-size: rem(15);
+    line-height: 1.43;
+    flex-grow: 1;
+    margin-left: auto;
+    @include mq(md){
+        font-size: rem(16);
+    }
+}

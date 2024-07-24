@@ -1,11 +1,18 @@
 @use "global" as *;
 
-.header{
+.header {
     background-color: #01C48C;
     height: rem(40);
-    display: flex;
-    align-items: center;
-    padding-left: rem(40);
+    align-items: center; /* 子要素を上下中央に配置 */
+}
+
+.header__inner {
+    max-width: rem(1410);
+    margin: auto;
+    padding: 0 rem(25);
+    height: rem(40);
+    display: flex; /* Flexboxを有効にする */
+    align-items: center; /* 子要素を上下中央に配置 */
 }
 
 .header p {

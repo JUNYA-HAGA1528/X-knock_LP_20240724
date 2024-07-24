@@ -1,0 +1,21 @@
+@use "global" as *;
+
+.merit__inner {
+    text-align: center;
+    max-width: 1230px;
+    margin: auto;
+    padding: 0 rem(25);
+}
+
+.merit__title {
+    color: #01C48C;
+    font-size: rem(48);
+    border: solid 1px #01C48C;
+    padding: rem(24) 0 rem(80);
+}
+
+.merit__title span {
+    font-size: rem(40);
+}
+
+

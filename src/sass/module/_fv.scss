@@ -27,6 +27,9 @@
 } 
 
 
+
+
+
 /*fv__head*/
 .fv__head{
     display: flex;
@@ -162,12 +165,15 @@
 
 /*fv__bottom*/
 .fv__bottom{
-    margin-top: rem(36);
+    max-width: 1440px;
+    margin: rem(36) auto auto auto;
+    padding: 0 rem(20);
 }
 
 .fv__bottom-wrapper{
-    padding-left: 7.85%;
-    padding-right: 1.4%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 0 rem(45);
 }
 
 .fv__bottom-left{
@@ -220,4 +226,13 @@
     font-size: rem(14);
     font-weight: $bold;
     font-family: "Noto Sans JP", sans-serif;
+}
+
+
+.fv__bottom-right img {
+    margin-top: rem(-100);
+    width: rem(510);
+    height: rem(213);
+    position: relative;
+    z-index: 101;
 }

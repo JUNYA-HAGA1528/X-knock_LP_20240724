@@ -3,10 +3,9 @@
 .top-price{
     margin-top: rem(80);
     padding-top: rem(40);
-    padding-bottom: rem(78);
+    padding-bottom: rem(80);
     @include mq(md){
         margin-top: rem(113);
         padding-top: rem(58);
-        padding-bottom: rem(80);
-    }
+   }
 }

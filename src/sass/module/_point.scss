@@ -1,0 +1,39 @@
+@use "global" as *;
+
+.point{
+   text-align: center;
+}
+
+.point__inner{
+    max-width: $max-width;
+    margin: auto;
+    padding: 0 rem(25);
+    @include mq(md){
+        max-width: rem(1180);
+    }
+}
+
+.point__head{
+    font-weight: $bold;
+}
+
+.point__head-en{
+    font-family: $second-font-family;
+    font-size: rem(14);
+    color: #01C48C;
+    @include mq(md){
+        font-size: rem(20);
+    }
+}
+
+.point__head-en::first-letter {
+	text-transform: capitalize;
+}
+
+.point__head-title{
+    font-size: rem(24);
+    color: #01C48C;
+    @include mq(md){
+        font-size: rem(48);
+    }
+}

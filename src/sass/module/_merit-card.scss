@@ -146,7 +146,6 @@
 
 .merit-card__text{
     margin-left: rem(13.4);
-    color: #2F3A67;
     font-size: rem(16);
     font-weight: $bold;
     text-align: left;
@@ -175,7 +174,6 @@
 
 .merit-card__buttons-text {
     font-size: rem(12);
-    color: #2F3A67;
     font-weight: $bold;
     text-align: center;
     @include mq(md){
@@ -190,7 +188,7 @@
     width: rem(319);
     padding: rem(14) 0;
     color: $white;
-    background: #2F3A67;
+    background: $black;
     border: 1px solid transparent;
     font-size: rem(15);
     font-weight: $normal;

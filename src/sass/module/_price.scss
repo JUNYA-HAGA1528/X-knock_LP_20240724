@@ -2,15 +2,15 @@
 
 .price{
     background-color: #01C48C;
-    background-image: url('../images/common/price-bg-sp.png');
+    background-image: url(../images/common/price-bg-sp.png);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: rem(390) rem(1581);
     @include mq(md){
-        background-image: url('../images/common/price-bg.png');
+        background-image: url(../images/common/price-bg.png);
         background-position: center;
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: rem(1440) ;
     }
 }
 
@@ -83,7 +83,7 @@
 .price__head {
     font-size: rem(20);
     font-weight: $bold;
-    background-color: #2F3A67;
+    background-color: $black;
     color: $white;
     display: inline-block;
     padding: rem(13) rem(284) rem(13) rem(20);
@@ -100,7 +100,6 @@
 
 .price__text {
     font-size: rem(16);
-    color: #2F3A67;
     font-weight: $bold;
     line-height: 1.8;
     background-color: $white;

@@ -48,7 +48,6 @@
 .fv-pc__head-content{
     text-align: center;
     background-color: #F2F2F2;
-    color: #2F3A67;
     font-weight: $bold;
     padding: 0 rem(22) rem(14);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), /* メインの影 */
@@ -86,9 +85,9 @@
 
 .fv-pc__head-button--third{
     padding: 0 rem(40);
-    color: #2F3A67;
+    color: $black;
     background-color: inherit;
-    border: solid 1px  #2F3A67;
+    border: solid 1px  $black;
 }
 
 

@@ -1,6 +1,172 @@
 @use "global" as *;
 
 .trouble{
-    margin-top: rem(100);
     background-color: #01C48C;
+    background-image: url(../images/common/trouble-bg-sp.png);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: rem(390) rem(1351);
+    @include mq(md){
+        background-image: url(../images/common/trouble-bg.png);
+        background-position: top right;
+        background-repeat: no-repeat;
+        background-size: rem(1440) ;
+    }
+}
+
+.trouble__inner{
+    max-width: $max-width;
+    margin: auto;
+    padding: 0 rem(25);
+    @include mq(md){
+        max-width: rem(1230);
+    }
+}
+
+.trouble__list{
+    margin-top: rem(30);
+    @include mq(md){
+        margin-top: rem(40);
+    }
+}
+
+.trouble__item{
+    @include mq(md){
+        display: flex;
+        gap: 0 rem(80);
+        align-items: center;
+    }
+}
+
+.trouble__left{
+    width: 100%;
+    @include mq(md){
+        width: 50.4237%;
+    }
+}
+
+.trouble__left-img img {
+    aspect-ratio: 340/259;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    @include mq(md){
+        aspect-ratio: 595/453;
+    }
+}
+
+.trouble__left-text{
+    text-align: center;
+    color: $white;
+    margin-top: rem(10);
+    font-size: rem(10);
+    font-weight: $bold;
+    @include mq(md){
+        font-size: rem(10);
+        margin-top: rem(20);
+    }
+}
+
+.trouble__left-text a {
+    transition: 0.3s;
+}
+
+.trouble__left-text a:hover {
+    opacity: 0.5;
+}
+
+
+
+.trouble__right{
+    width: 100%;
+    margin-top: rem(40);
+    @include mq(md){
+        width: 42.7966%;
+        margin-top: rem(0);
+    }
+}
+
+.trouble__right-text{
+    color: $white;
+    font-size: rem(16);
+    font-weight: $bold;
+    line-height: 2;
+    letter-spacing: 0.01em;
+    @include mq(md){
+        font-size: rem(20);
+    }
+}
+
+.trouble__right-color {
+    background-color: $black;
+    font-size: rem(20);
+    line-height: 2;
+    @include mq(md){
+        font-size: rem(24);
+    }
+}
+
+.trouble__right-font{
+    font-size: rem(20);
+}
+
+
+
+
+
+.trouble__bg {
+    background-image: url(../images/common/trouble-wall-bg.png);
+    background-size: 100% rem(370);
+    background-position: center;
+    object-fit: cover;
+    position: relative;
+    width: 100%;
+    max-width: rem(350);
+    height: rem(370);
+    margin:rem(20) auto auto auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include mq(md) {
+        background-image: url(../images/common/trouble-wall.png);
+        background-size: cover;
+        height: rem(216);
+        margin:rem(14) auto auto auto;
+        max-width: 100%;
+    }
+}
+
+.trouble__bg-wrapper {
+    position: relative;
+    z-index: 1;
+    max-width: rem(450);
+    margin-top: rem(10);
+    @include mq(md){
+        max-width: rem(600);
+    }
+}
+
+.trouble__bg-text {
+    padding: 0 rem(38);
+    font-size: rem(16);
+    font-weight: $bold;
+    line-height: 1.75;
+    @include mq(md){
+        padding: 0 rem(33);
+    }
+}
+
+.trouble__bg-text--margin{
+    margin-top: rem(20);
+    @include mq(md){
+        margin-top: 0;
+    }
+}
+
+.trouble__bg-line{
+    background: linear-gradient(transparent 75%, #01C48C 75%);
+}
+
+.trouble__bg-color{
+    color: #01C48C;
 }

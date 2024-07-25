@@ -30,10 +30,11 @@ $bold: 700;
 ////////////////////
 
 //色指定（共通性のあるものは出来る限り指定すると良い）
-$black: #111;
+$black: #2F3A67;
 $white: #fff;
 
 
 body {
   font-family: $base-font-family;
+  color: $black;
 }

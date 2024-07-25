@@ -1,0 +1,21 @@
+@use "global" as *;
+
+.favorite{
+    background-color: #DFEED7;
+    font-weight: $bold;
+}
+
+.favorite__inner{
+    max-width: $max-width;
+    margin: auto;
+    @include mq(md){
+        max-width: rem(1025);
+    }
+}
+
+.favorite__text{
+    font-size: rem(16);
+    @include mq(md){
+        font-size: rem(20);
+    }
+}

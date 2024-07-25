@@ -1,0 +1,95 @@
+@use 'global' as *;
+
+.point-card__logo {
+    position: relative; /* Changed from absolute to relative */
+    width: 100%; /* Make sure it takes full width of the parent */
+    text-align: center; /* Center the text within the span */
+    top: rem(-20);
+    left: 0;
+}
+
+.point-card__logo span {
+    font-size: rem(20);
+    background-color: #01C48C;
+    color: $white;
+    width: rem(220);
+    padding: rem(8.5) 0;
+    display: inline-block;
+    border-radius: rem(50);
+}
+
+.point-card__head {
+    position: relative;
+    width: 100%; /* 親要素の幅を設定 */
+    text-align: center; /* 子要素の中央揃え */
+}
+
+.triangle {
+    position: absolute;
+    top: rem(260);
+    left: 50%; /* 親要素の中央に配置 */
+    transform: translateX(-50%); /* 完全に中央揃え */
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-right: 30px solid transparent;
+    border-left: 30px solid transparent;
+    border-top: 25px solid $white;
+    border-bottom: 0;
+}
+
+.point-card__title{
+    font-size: rem(24);
+}
+
+.point-card__img{
+    width: rem(184);
+    height: rem(184);
+    margin: rem(20) auto auto auto;
+}
+
+.point-card__img img {
+    aspect-ratio: 184/184;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.point-card__wrapper{
+    background-color:#01C48C ;
+    color: $white;
+    margin-top: rem(31);
+    padding: rem(36) rem(20) rem(40);  
+    @include mq(md){
+        height: rem(480);
+        padding: rem(36) rem(20) rem(71);  
+    }
+}
+
+.point-card__subtitle {
+    font-size: rem(16);
+    padding: rem(20) 0;
+    border-top: solid 1px $white;
+    border-bottom: solid 1px $white;
+    @include mq(md){
+        min-height: rem(120);
+    }
+}
+
+.point-card__sentence{
+    padding: 0 rem(10);
+    @include mq(md){
+        padding: 0;
+    }
+}
+
+.point-card__text{
+    text-align: left;
+    margin-top: rem(20);
+    font-size: rem(16);
+    line-height: 1.75;
+}
+
+.point-card__text span {
+    color: $black;
+}

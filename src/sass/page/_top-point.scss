@@ -1,8 +1,8 @@
 @use "global" as *;
 
 .top-point{
-    margin-top: rem(40);
+    padding: rem(40) 0 rem(80);
     @include mq(md){
-        margin-top: rem(58);
+        padding: rem(58) 0 rem(80);
     }
 }

@@ -1,7 +1,9 @@
 @use "global" as *;
 
 .point{
-   text-align: center;
+    background-color: #F7F7F7;
+    text-align: center;
+    font-weight: $bold;
 }
 
 .point__inner{
@@ -11,10 +13,6 @@
     @include mq(md){
         max-width: rem(1180);
     }
-}
-
-.point__head{
-    font-weight: $bold;
 }
 
 .point__head-en{
@@ -35,5 +33,23 @@
     color: #01C48C;
     @include mq(md){
         font-size: rem(48);
+    }
+}
+
+.point__head-subtitle{
+    font-size: rem(32);
+    @include mq(md){
+        font-size: rem(48);
+    }
+}
+
+.point__head-text{
+    font-size: rem(16);
+    margin-top: rem(20);
+    text-align: left;
+    @include mq(md){
+        font-size: rem(20);
+        margin-top: rem(40);
+        text-align: center;
     }
 }

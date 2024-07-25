@@ -2,7 +2,7 @@
 
 .company-card {
     color: #00845F;
-    font-weight: $bold;
+    font-weight: bold; /* $bold 変数を直接 bold に置き換え */
     border-radius: rem(5);
     display: flex;
     flex-direction: column;
@@ -11,13 +11,13 @@
     box-sizing: border-box; /* パディングとボーダーを含めたサイズ調整 */
 }
 
-
 .company-card__title {
     text-align: center;
     font-size: rem(17.11);
     font-weight: bold;
     line-height: 1.35;
-    @include mq(md){
+    padding-bottom: rem(10);
+    @include mq(md) {
         font-size: rem(18);
     }
 }
@@ -34,31 +34,44 @@
     display: flex;
     font-size: rem(17.11);
     line-height: 1.43;
-    @include mq(md){
+    min-height: rem(40); /* 最小高さを設定 */
+    padding-bottom: rem(5);
+    @include mq(md) {
         font-size: rem(18);
     }
 }
 
-.company-card__list + .company-card__list{
+.company-card__list + .company-card__list {
     margin-top: rem(7);
 }
 
 .company-card__list dt {
     width: 20%;
+    display: flex;
+    margin-top: rem(-1);
 }
 
 .company-card__list dd {
     width: 77%;
+    box-sizing: border-box;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    white-space: normal;
+    display: flex;
 }
 
 .company-card__list a {
     transition: 0.3s;
-    border-bottom: solid 1px #00845F;
-    display: inline-block;
-    line-height: 1; /* 行の高さを調整してボーダーを文字に近づける */
+    display: inline; /* インライン要素に変更 */
+    line-height: 1;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    white-space: normal;
+    max-width: 100%;
+    text-decoration: underline; 
 }
 
-.company-card__list a:hover{
+.company-card__list a:hover {
     opacity: 0.3;
 }
 
@@ -68,7 +81,7 @@
     line-height: 1.43;
     flex-grow: 1;
     margin-left: auto;
-    @include mq(md){
+    @include mq(md) {
         font-size: rem(16);
     }
 }

@@ -4,6 +4,138 @@
     background-color: #01C48C;
 }
 
+.price__inner{
+    max-width: $max-width;
+    margin: auto;
+    padding: 0 rem(25);
+    @include mq(md){
+        max-width: rem(1230);
+    }
+}
 
 
 
+
+.point__list{
+    margin-top: rem(40);
+    @include mq(md){
+        margin-top: rem(82);
+    }
+}
+
+.point__item + .point__item{
+    margin-top: rem(80);
+    @include mq(md){
+        margin-top: rem(42);
+    }
+}
+
+.point__item{
+    letter-spacing: 0.1em;
+    @include mq(md){
+        display: flex;
+    }
+}
+
+.point__item--reverse{
+    flex-direction: row-reverse;
+}
+
+.point__images{
+    width: 100%;
+    @include mq(md){
+        width: 55%;
+    }
+}
+
+.point__img img {
+    aspect-ratio: 335/223;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    @include mq(md){
+        aspect-ratio: 605/404;
+    }
+}
+
+.point__comment{
+    width: 100%;
+    text-align: center;
+    margin: rem(20) 0 0 0;
+    @include mq(md){
+        width: 37.192%;
+        margin: rem(35) rem(24) 0 rem(64);
+    }
+}
+
+
+.point__text{
+    font-size: rem(18);
+    line-height: calc(50/20);
+    border-top: solid 1px  #D7D7D7;
+    border-bottom: solid 1px #D7D7D7;
+    padding:rem(30) 0;
+    @include mq(md){
+        font-size: rem(20);
+        padding: rem(80) 0 rem(60);
+    }
+}
+
+.point__notes{
+    font-size: rem(16);
+    line-height: calc(50/16);
+}
+
+
+
+
+
+
+
+
+
+
+.point__comment-second{
+    width: 100%;
+    text-align: center;
+    margin: rem(20) 0 0 0;
+    @include mq(md){
+        width: 37.192%;
+        margin: rem(35) rem(146) 0 rem(64);
+    }
+}
+
+.point__text-second{
+    font-size: rem(18);
+    line-height: calc(50/20);
+    border-top: solid 1px  #D7D7D7;
+    border-bottom: solid 1px #D7D7D7;
+    padding: rem(30) 0;
+    @include mq(md){
+        font-size: rem(20);
+        padding: rem(114) 0 rem(70);
+    }
+}
+
+.point__images-second{
+    display: flex;
+    gap: rem(8.3);
+}
+
+.point__images-second{
+    width: 100%;
+    @include mq(md){
+        width: 44.21%;
+    }
+}
+
+.point__flex-second{
+    width: 49.2%;
+}
+
+.point__img-second img {
+    aspect-ratio: 248/372;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

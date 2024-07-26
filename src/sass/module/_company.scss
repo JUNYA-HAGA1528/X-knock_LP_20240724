@@ -1,0 +1,70 @@
+@use "global" as *;
+
+.company{
+    // background-image: url(../images/common/company-head.png);
+    // background-position: center;
+    // background-repeat: no-repeat;
+    // background-size: rem(1543) rem(914);
+}
+
+.company{
+    position: relative;
+}
+
+.company::before {
+    @include mq(md){
+        background-image: url(../images/common/company-left-icon.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: absolute;
+        content: "";
+        top: rem(400);
+        left: calc(50% - min(50%, rem(670)));
+        width: rem(141);
+        height: rem(200);
+        z-index: 100;
+    }
+} 
+
+.company-right{
+    position: relative;
+}
+
+.company-right::before {
+    @include mq(md){
+        background-image: url(../images/common/company-right-icon.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: absolute;
+        content: "";
+        top: rem(350);
+        right: calc(50% - min(50%, rem(670)));
+        width: rem(129);
+        height: rem(185);
+        z-index: 100;
+    }
+} 
+
+
+.company__inner{
+    max-width: $max-width;
+    margin: auto;
+    padding: 0 rem(25);
+    font-weight: $bold;
+    @include mq(md){
+        max-width: rem(1356);
+    }
+}
+
+.company__container{
+    box-shadow: rem(2) rem(2) rem(10) rgba(0, 0, 0, 0.25);
+    text-align: center;
+    width: 100%;
+    margin:rem(143) auto auto auto;
+    padding: rem(106) 0 rem(40) ;
+    @include mq(md){
+        width: 90%;
+    }
+}

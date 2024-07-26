@@ -39,7 +39,10 @@
           },
           h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
         })(document);
-      </script>
+    </script>
+
+
+
 </head>
 <body>
     <!----------------
@@ -448,26 +451,103 @@
 
 
         <!----------------
-            point
+            favorite
         ------------------>
+            <!--「続きをよむ」のタブの設置-->
+            <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                    var checkboxes = document.querySelectorAll('.information__content input[type="checkbox"]');
+                    checkboxes.forEach(function(checkbox) {
+                        var label = document.querySelector('label[for="' + checkbox.id + '"]');
+                        var container = checkbox.parentElement.querySelector('.information__img');
+                        var textbox = container.parentElement;
+        
+                        label.addEventListener('click', function() {
+                            if (checkbox.checked) {
+                                checkbox.checked = false;
+                                label.style.display = 'block';
+                                container.style.height = '100px';
+                                textbox.classList.remove('opened'); // 開いたときのクラスを削除
+                            } else {
+                                checkbox.checked = true;
+                                label.style.display = 'none';
+                                container.style.height = container.scrollHeight + 'px';
+                                textbox.classList.add('opened'); // 開いたときのクラスを追加
+                            }
+                        });
+                    });
+                });    
+            </script>      
+        
         <section class="top-favorite favorite">
-            <h2 class="favorite__title">
-
-            </h2>
             <div class="favorite__inner">
-                <p class="favorite__text">
-                    太陽光発電を始める際、各種補助金を活用することで初期費用を大幅に抑えられます。<br class="u-desktop">
-                    国や自治体、電力会社が提供する補助金制度があり、条件を満たせば複数の制度を組み合わせることも可能です。<br>
-                    補助金額は設置する太陽光パネルの出力や蓄電池の容量、居住地域によって異なります。<br class="u-desktop">
-                    例えば、4kWのシステムで50万円以上の補助金を受け取れる可能性があります。
-                </p>
-                <div class="favorite__sentence">
-                    <p class="favorite__sentence-text">
-                        補助金制度は年度ごとに変更される可能性があるため、<br class="u-desktop">
+                <div class="favorite__bg"></div>
+                <div class="favorite__title u-mobile">
+                    aaaaa
+                </div>
+                <div class="favorite__container">
+                    <p class="favorite__text">
+                        太陽光発電を始める際、各種補助金を活用することで初期費用を大幅に抑えられます。<br class="u-desktop">
+                        国や自治体、電力会社が提供する補助金制度があり、条件を満たせば複数の制度を組み合わせることも可能です。<br>
+                        補助金額は設置する太陽光パネルの出力や蓄電池の容量、居住地域によって異なります。<br class="u-desktop">
+                        例えば、4kWのシステムで50万円以上の補助金を受け取れる可能性があります。
+                    </p>
+                    <p class="favorite__sentence">
+                        <span>補助金制度は年度ごとに変更される可能性がある</span>ため、<br class="u-desktop">
                         最新情報の確認をしてください。<br class="u-desktop">
                         また、申請手続きや期限にも注意が必要です。<br>
                         以下で、熊本エリア・県北エリアの太陽光発電に関する主な補助金制度をご紹介します。
                     </p>
+                </div>
+            </div>
+
+            <div class="favorite__info information">    
+                <div class="information__inner">
+                    <div class="information__title section-title">
+                        <div class="section-left__img">
+                            <img src="./assets/images/common/section-left.png" alt="">
+                        </div>
+                        <div class="section-title__text">
+                            <p class="section-title__en">information</p>
+                            <h2 class="section-title__jp section-title__jp--text"><span>熊本エリア・県北エリア</span><br class="u-mobile">の<span>補助金情報</span></h2>
+                        </div>
+                        <div class="section-right__img">
+                            <img src="./assets/images/common/section-right.png" alt="">
+                        </div>
+                    </div>
+    
+                    <div class="information__container">
+                        <div class="information__container-inner">
+
+                            <div class="information__wrapper">
+                                <!--pc-->
+                                <div class="information__content u-desktop">
+                                    <input id="cp01" type="checkbox">
+                                    <label for="cp01"></label>
+                                    <div class="information__images">
+                                        <div class="information__img">
+                                            <img src="./assets/images/common/information-figure.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!--sp-->
+                                <div class="information__images-sp u-mobile">
+                                    <div class="information__img-sp">
+                                        <img src="./assets/images/common/information-figure-sp.png" alt="">
+                                    </div>
+                                </div>
+
+                            </div>
+                            <dl class="information__comment">
+                                <dt class="information__quote">引用元：</dt>
+                                <dd class="information__region">
+                                    熊本市/熊本市省エネルギー機器等導入推進事業補助金/合志市/合志市脱炭素推進対策補助金/<br class="u-desktop">
+                                    癒しの里菊池/菊陽町/八代市/氷川町/荒尾市
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -616,9 +696,9 @@
 
 
         <!----------------
-            company
+            catalog
         ------------------>
-        <section class="top-company company">
+        <section class="top-catalog company">
             <div class="company__inner">
                 <div class="company__title">
                     <div class="company__left-img">

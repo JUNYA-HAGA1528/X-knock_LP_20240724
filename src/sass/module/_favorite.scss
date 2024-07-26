@@ -9,13 +9,101 @@
     max-width: $max-width;
     margin: auto;
     @include mq(md){
+        max-width: rem(1440);
+    }
+}
+
+.favorite__bg{
+    position: relative;
+}
+
+.favorite__bg::before {
+    @include mq(md){
+        background-image: url(../images/common/favorite-title.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: absolute;
+        content: "";
+        top: 0;
+        left: calc(50% - min(52%, rem(800)));
+        right: 0;
+        width: rem(1180);
+        height: rem(466);
+    }
+}
+
+
+.favorite__container{
+    max-width: $max-width;
+    margin: auto;
+    @include mq(md){
         max-width: rem(1025);
+        padding-top: rem(457);
+        height: 100%;
     }
 }
 
 .favorite__text{
     font-size: rem(16);
+    line-height: 1.8;
+    padding: 0 rem(35);
+    text-align: justify;
     @include mq(md){
         font-size: rem(20);
+        padding: 0;
+    }
+}
+
+.favorite__sentence{
+    background-color: $white;
+    margin-top: rem(62);
+    font-size: rem(16);
+    padding: rem(40) rem(35) rem(40) rem(22);
+    position: relative;
+    margin-left: rem(25);
+    line-height: 2;
+    @include mq(md){
+        margin-top:rem(101) ;
+        font-size: rem(20);
+        padding: rem(34) rem(124) rem(20) rem(94);
+        margin-left: 0;
+    }
+}
+
+.favorite__sentence::after {
+    background-image: url(../images/common/favorite-text.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: "";
+    position: absolute;
+    top: 0%;
+    left: rem(0);
+    width: rem(113);
+    height: rem(36);
+    transform: translateY(-50%);
+    transition: 0.2s background-color;
+    @include mq(md){
+        width: rem(186);
+        height: rem(36);
+    }
+}
+
+.favorite__sentence span {
+    background-color: #01C48C;
+    color: $white;
+    padding: rem(3);
+    font-size: rem(20);
+    @include mq(md){
+        padding: rem(5);
+        margin-left: rem(-5);
+    }
+}
+
+.favorite__info{
+    margin-top: rem(60);
+    @include mq(md){
+        margin-top: rem(63);
     }
 }

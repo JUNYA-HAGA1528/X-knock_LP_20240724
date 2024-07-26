@@ -1,6 +1,6 @@
 @use "global" as *;
 
-.company {
+.catalog {
     background-color: #01C48C;
     background-image: url('../images/common/campany-bg.png');
     background-position: top center;
@@ -12,7 +12,7 @@
 }
 
 
-.company__inner{
+.catalog__inner{
     max-width: $max-width;
     margin: auto;
     padding: 0 rem(25);
@@ -21,7 +21,7 @@
     }
 }
 
-.company__title{
+.catalog__title{
     display: flex;
 	gap: 0 rem(8);
 	text-align: center;
@@ -33,14 +33,14 @@
 	}
 }
 
-.company__area{
+.catalog__area{
     font-size: rem(20);
     @include mq(md){
         font-size: rem(32);
     }
 }
 
-.company__chart{
+.catalog__chart{
     margin-top: rem(10);
     font-size: rem(24);
     @include mq(md){
@@ -49,8 +49,8 @@
     }
 }
 
-.company__left-img,
-.company__right-img{
+.catalog__left-img,
+.catalog__right-img{
     margin-top: rem(24);
 	width: rem(32);
 	height: rem(5);
@@ -61,7 +61,7 @@
 	}
 }
 
-.company__list{
+.catalog__list{
     margin-top: rem(40);
     @include mq(md){
         margin-top: rem(76);

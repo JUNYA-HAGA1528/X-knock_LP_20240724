@@ -1,6 +1,6 @@
 @use "global" as *;
 
-.company-card {
+.catalog-card {
     color: #00845F;
     font-weight: bold; /* $bold 変数を直接 bold に置き換え */
     border-radius: rem(5);
@@ -11,7 +11,7 @@
     box-sizing: border-box; /* パディングとボーダーを含めたサイズ調整 */
 }
 
-.company-card__title {
+.catalog-card__title {
     text-align: center;
     font-size: rem(17.11);
     font-weight: bold;
@@ -22,7 +22,7 @@
     }
 }
 
-.company-card__wrapper {
+.catalog-card__wrapper {
     margin-top: rem(10);
     display: flex;
     flex-direction: column;
@@ -30,7 +30,7 @@
     flex-grow: 1; /* ラッパー部分を可能な限り拡張 */
 }
 
-.company-card__list {
+.catalog-card__list {
     display: flex;
     font-size: rem(17.11);
     line-height: 1.43;
@@ -41,17 +41,17 @@
     }
 }
 
-.company-card__list + .company-card__list {
+.catalog-card__list + .catalog-card__list {
     margin-top: rem(7);
 }
 
-.company-card__list dt {
+.catalog-card__list dt {
     width: 20%;
     display: flex;
     margin-top: rem(-1);
 }
 
-.company-card__list dd {
+.catalog-card__list dd {
     width: 77%;
     box-sizing: border-box;
     overflow-wrap: break-word;
@@ -60,7 +60,7 @@
     display: flex;
 }
 
-.company-card__list a {
+.catalog-card__list a {
     transition: 0.3s;
     display: inline; /* インライン要素に変更 */
     line-height: 1;
@@ -71,11 +71,11 @@
     text-decoration: underline; 
 }
 
-.company-card__list a:hover {
+.catalog-card__list a:hover {
     opacity: 0.3;
 }
 
-.company-card__text {
+.catalog-card__text {
     margin-top: rem(18);
     font-size: rem(15);
     line-height: 1.43;

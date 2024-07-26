@@ -1,13 +1,13 @@
 @use 'global' as *;
 
-.company-cards{
+.catalog-cards{
     @include mq(md){
         display: flex;
         flex-wrap: wrap;
     }
 }
 
-.company-cards__item{
+.catalog-cards__item{
     background-color: $white;
     padding: rem(16);
     @include mq(md){
@@ -17,7 +17,7 @@
     }
 }
 
-.company-cards__item + .company-cards__item{
+.catalog-cards__item + .catalog-cards__item{
     margin-top: rem(40);
     @include mq(md){
         margin-top: 0;
@@ -25,7 +25,7 @@
     }
 }
 
-.company-cards__item {
+.catalog-cards__item {
     background-image: url('../images/common/company-card.png');
     background-position: calc(100% - 0px) calc(100% - 0px); /* Adjust values as needed */
     background-repeat: no-repeat;
@@ -34,14 +34,14 @@
 
 
 /* 枚数が増えたときのための処理 */
-.company-cards__item:nth-child(3n + 1){
+.catalog-cards__item:nth-child(3n + 1){
     @include mq(md){
         margin-left: 0;
     }
 }
 
 /* 枚数が増えたときのための処理 */
-.company-cards__item:nth-child(n + 4){
+.catalog-cards__item:nth-child(n + 4){
     @include mq(md){
         margin-top: 1.875rem;
     }

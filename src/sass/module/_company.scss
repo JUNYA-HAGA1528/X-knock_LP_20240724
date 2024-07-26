@@ -59,12 +59,12 @@
 }
 
 .company__container{
-    box-shadow: rem(2) rem(2) rem(10) rgba(0, 0, 0, 0.25);
     text-align: center;
     width: 100%;
     margin:rem(143) auto auto auto;
     padding: rem(106) 0 rem(40) ;
     @include mq(md){
+        box-shadow: rem(2) rem(2) rem(10) rgba(0, 0, 0, 0.25);
         width: 90%;
     }
 }

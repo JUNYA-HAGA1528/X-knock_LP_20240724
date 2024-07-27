@@ -20,6 +20,26 @@
     }
 }
 
+.detail__maker{
+    background-color: #6ECAAF;
+    @include mq(md){
+        margin-top: rem(40);
+    }
+}
+
+.detail__reviews{
+    margin-top: rem(42);
+    @include mq(md){
+        margin-top: rem(70);
+    }
+}
+
+
+
+
+
+
+
 .detail__sidebar{
     width: 100%;
     @include mq(md){

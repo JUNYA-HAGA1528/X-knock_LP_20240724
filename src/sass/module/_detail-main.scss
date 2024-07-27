@@ -1,15 +1,30 @@
 @use "global" as *;
 
-.detail-main{
+.detail-main-logo{
     position: relative;
 }
 
-
+.detail-main-logo::before {
+    @include mq(md) {
+        background-image: url(../images/common/detail-main__text-right.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: absolute;
+        content: "";
+        bottom: rem(-15);
+        right: calc(50% - min(50%, rem(450)));
+        width: rem(194);
+        height: rem(181);
+        z-index: 100;
+    }
+}
 
 .detail-main__inner {
     max-width: $max-width;
     margin: auto;
     padding: 0 rem(25); // 全体にパディングを適用
+    position: relative;
     @include mq(md) {
         max-width: rem(850);
     }
@@ -76,30 +91,9 @@
     }
 }
 
-.detail-main-icon {
-    position: relative;
-}
-
-.detail-main-icon::before {
-    @include mq(md) {
-        background-image: url(../images/common/detail-main__text-right.png);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: contain;
-        position: absolute;
-        content: "";
-        bottom: rem(-15);
-        right: calc(50% - min(50%, rem(450)));
-        width: rem(194);
-        height: rem(181);
-        z-index: 100;
-    }
-}
-
 .detail-main__icon{
     width: rem(50);
     height: rem(72);
-    position: relative;
     z-index: 100;
 }
 

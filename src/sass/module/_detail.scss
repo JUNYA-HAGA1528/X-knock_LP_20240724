@@ -1,22 +1,30 @@
 @use "global" as *;
 
-.detail{
-    max-width: $max-width;
-    margin: auto;
+.detail__container{
+    display: flex;
+}
+
+.detail__content{
+    width: 100%;
+    background-color: #68D3B4;
     @include mq(md){
-        max-width: rem(1440);
+        width: 83.34%;
     }
 }
 
-.detail__main{
-    width: 83.34%;
-    background-color: #68D3B4;
+.detail__case{
+    background-color: $green;
+    margin-top: rem(60);
+    @include mq(md){
+        margin-top: rem(130);
+    }
 }
 
 .detail__sidebar{
-    width: 16.67%;
+    width: 100%;
+    @include mq(md){
+        width: 16.67%;
+    }
 }
 
-.detail{
-    display: flex;
-}
+

@@ -1,7 +1,7 @@
 @use "global" as *;
 
 .catalog {
-    background-color: #01C48C;
+    background-color: $green;
     background-image: url('../images/common/campany-bg.png');
     background-position: top center;
     background-repeat: no-repeat;

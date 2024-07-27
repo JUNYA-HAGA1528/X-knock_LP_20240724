@@ -61,8 +61,8 @@
 /*緑ボタン*/
 .buttons__text-green {
     font-size: rem(9.21);
-    color: #01C48C;
-    border: solid 1px #01C48C;
+    color: $green;
+    border: solid 1px $green;
     display: inline-block;
     width: rem(126);
     padding: rem(1) 0;
@@ -83,7 +83,7 @@
 .buttons__button-green {
     position: relative;
     z-index: 1;
-    background-color: #01C48C;
+    background-color: $green;
     color: #fff;
     display: inline-block;
     width: rem(247);

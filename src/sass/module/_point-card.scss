@@ -10,7 +10,7 @@
 
 .point-card__logo span {
     font-size: rem(20);
-    background-color: #01C48C;
+    background-color: $green;
     color: $white;
     width: rem(220);
     padding: rem(8.5) 0;
@@ -56,7 +56,7 @@
 }
 
 .point-card__wrapper{
-    background-color:#01C48C ;
+    background-color:$green ;
     color: $white;
     margin-top: rem(31);
     padding: rem(36) rem(20) rem(40);  

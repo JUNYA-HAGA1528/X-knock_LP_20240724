@@ -1,7 +1,7 @@
 @use "global" as *;
 
 .price{
-    background-color: #01C48C;
+    background-color: $green;
     background-image: url(../images/common/price-bg-sp.png);
     background-position: center;
     background-repeat: no-repeat;

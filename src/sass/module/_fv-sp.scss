@@ -32,7 +32,7 @@
 }
 
 .fv-sp__center-sell{
-    color: #01C48C;
+    color: $green;
 }
 
 .fv-sp__center-use{
@@ -64,7 +64,7 @@
 
 .fv-sp__title{
     font-size: rem(32);
-    color: #01C48C;
+    color: $green;
     margin-top: rem(20);
     margin-left: rem(5);
     position: relative;
@@ -147,7 +147,7 @@
     font-size: rem(7.9);
     font-family: "Noto Sans JP", sans-serif;
     background-color: $white;
-    color: #01C48C;
+    color: $green;
     width: rem(86);
     padding: rem(4.5) 0 rem(2.5);
     border-radius: rem(50);

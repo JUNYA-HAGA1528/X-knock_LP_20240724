@@ -17,7 +17,7 @@
 .point__head-en{
     font-family: $second-font-family;
     font-size: rem(14);
-    color: #01C48C;
+    color: $green;
     @include mq(md){
         font-size: rem(20);
     }
@@ -29,7 +29,7 @@
 
 .point__head-title{
     font-size: rem(24);
-    color: #01C48C;
+    color: $green;
     @include mq(md){
         font-size: rem(48);
     }

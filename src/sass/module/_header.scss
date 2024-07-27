@@ -1,7 +1,7 @@
 @use "global" as *;
 
 .header {
-    background-color: #01C48C;
+    background-color: $green;
     height: rem(40);
     align-items: center; /* 子要素を上下中央に配置 */
 }

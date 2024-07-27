@@ -1,7 +1,7 @@
 @use "global" as *;
 
 .trouble{
-    background-color: #01C48C;
+    background-color: $green;
     background-image: url(../images/common/trouble-bg-sp.png);
     background-position: top center;
     background-repeat: no-repeat;
@@ -161,9 +161,9 @@
 }
 
 .trouble__bg-line{
-    background: linear-gradient(transparent 75%, #01C48C 75%);
+    background: linear-gradient(transparent 75%, $green 75%);
 }
 
 .trouble__bg-color{
-    color: #01C48C;
+    color: $green;
 }

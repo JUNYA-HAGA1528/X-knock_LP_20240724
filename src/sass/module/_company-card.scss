@@ -204,7 +204,7 @@
 }
 
 .company-card__dd span {
-    background-color: #01C48C;
+    background-color: $green;
     color: $white;
 }
 
@@ -219,7 +219,7 @@
 }
 
 .company-card__text span {
-    background: linear-gradient(transparent 75%, #01C48C 75%);
+    background: linear-gradient(transparent 75%, $green 75%);
 }
 
 

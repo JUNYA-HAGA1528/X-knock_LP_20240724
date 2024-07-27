@@ -22,7 +22,9 @@
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 2;
-    background-color: #fff; 
+    background-color: #fff;
+    border-radius: rem(5); 
+    text-align: center;
     @include mq(md){
         font-size: rem(16);
         width: rem(220);
@@ -38,6 +40,7 @@
     display: inline-block;
     width: rem(247);
     padding: rem(12) 0;
+    border-radius: rem(5); 
     @include mq(md){
         width: rem(439);
         padding: rem(20.5) 0;
@@ -73,6 +76,7 @@
     transform: translate(-50%, -50%);
     z-index: 2;
     background-color: $white; 
+    text-align: center;
     @include mq(md){
         font-size: rem(16);
         width: rem(220);
@@ -89,6 +93,7 @@
     width: rem(247);
     padding: rem(12) 0;
     font-size: rem(16);
+    border-radius: rem(5); 
     @include mq(md){
         width: rem(439);
         padding: rem(20.5) 0;

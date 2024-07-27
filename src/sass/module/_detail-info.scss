@@ -1,0 +1,9 @@
+@use "global" as *;
+
+.detail-info__inner{
+    max-width: $max-width;
+    margin: auto;
+    @include mq(md){
+        max-width: rem(940);
+    }
+}

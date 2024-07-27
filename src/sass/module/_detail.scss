@@ -1,12 +1,19 @@
 @use "global" as *;
 
+.detail{
+}
+
 .detail__container{
     display: flex;
 }
 
 .detail__content{
     width: 100%;
-    background-color: #68D3B4;
+    background-image: url(../images/common/detail-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
     @include mq(md){
         width: 83.34%;
     }
@@ -34,7 +41,9 @@
     }
 }
 
-
+.detail__info{
+    margin-top: rem(80);
+}
 
 
 

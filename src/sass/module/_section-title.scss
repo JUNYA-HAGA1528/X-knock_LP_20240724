@@ -61,3 +61,29 @@
 		font-size: rem(48);
 	}
 }
+
+.section-title__jp--reviews{
+	font-size: rem(20);
+	@include mq(md){
+		font-size: rem(30);
+	}
+}
+
+.section-title__jp--reviews span {
+	font-size: rem(24);
+	@include mq(md){
+		font-size: rem(36);
+	}
+}
+
+.section-left__img--reviews,
+.section-right__img--reviews{
+	margin: rem(4) rem(30) 0;
+	width: rem(32);
+	height: rem(5);
+	@include mq(md){
+		margin: rem(7) 0 0 0;
+		width: rem(132);
+		height: rem(24);
+	}
+}

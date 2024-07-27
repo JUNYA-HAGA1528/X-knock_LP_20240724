@@ -1,23 +1,46 @@
 @use "global" as *;
 
 .detail{
+    @include mq(md){
+        max-width: rem(1440);
+        margin: auto;
+    }
 }
 
 .detail__container{
     display: flex;
 }
 
-.detail__content{
+.detail__list{
     width: 100%;
-    background-image: url(../images/common/detail-bg.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-
     @include mq(md){
         width: 83.34%;
+        max-width: rem(1200);
     }
 }
+
+.detail__list{
+    @include mq(md){
+        background-image: url(../images/common/detail.png);
+        background-position: top center;
+        background-repeat: no-repeat;
+        background-size: cover ;
+    }
+}
+
+.detail__item{
+    position: relative;
+}
+
+.detail__title{
+    position: absolute;
+    top: 2%;
+    left: 4%;
+    max-width: 84%;
+    margin: auto;
+    height: rem(312);
+}
+
 
 .detail__case{
     background-color: $green;

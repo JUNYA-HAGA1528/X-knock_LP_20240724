@@ -54,6 +54,15 @@
     }
 }
 
+.detail-maker__certification--eco img{
+    width: rem(299);
+    height: rem(570);
+    @include mq(md){
+        width: rem(616);
+        height: rem(286);
+    }
+}
+
 .detail-maker__list{
     background-color: $white;
     margin-top: rem(40);

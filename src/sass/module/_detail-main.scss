@@ -27,6 +27,7 @@
     position: relative;
     @include mq(md) {
         max-width: rem(850);
+        padding: 37% rem(25) 0; // 全体にパディングを適用
     }
 }
 
@@ -101,4 +102,8 @@
     position: absolute;
     bottom: -1%;
     left: 4%;
+}
+
+.detail__buttons{
+    padding-bottom: rem(120);
 }

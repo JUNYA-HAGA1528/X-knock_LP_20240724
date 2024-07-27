@@ -20,7 +20,8 @@
     }
 }
 
-.detail-main__inner {
+.detail-main__inner,
+.detail-main__inner-second {
     max-width: $max-width;
     margin: auto;
     padding: 0 rem(25); // 全体にパディングを適用
@@ -28,6 +29,40 @@
     @include mq(md) {
         max-width: rem(850);
         padding: 37% rem(25) 0; // 全体にパディングを適用
+    }
+}
+
+.detail-main__inner::before {
+    background-image: url(../images/common/detail-comment.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    content: "";
+    top: rem(-330);
+    left: calc(50% - min(48%, 50%));
+    width: rem(169);
+    height: rem(172);
+    z-index: 100;
+    @include mq(md){
+        background-image: none;
+    }
+} 
+
+.detail-main__inner-second::before {
+    background-image: url(../images/common/detail-comment2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    content: "";
+    top: rem(-330);
+    left: calc(50% - min(48%, 50%));
+    width: rem(169);
+    height: rem(172);
+    z-index: 100;
+    @include mq(md){
+        background-image: none;
     }
 }
 
@@ -104,6 +139,3 @@
     left: 4%;
 }
 
-.detail__buttons{
-    padding-bottom: rem(120);
-}

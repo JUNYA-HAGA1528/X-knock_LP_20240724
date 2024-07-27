@@ -29,10 +29,28 @@
 }
 
 .detail__item{
+    background-image: url(../images/common/detail-sp1.png);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover ;
+    @include mq(md){
+        background-image: none;
+    }
+}
+
+.detail__item + .detail__item{
+    margin-top: rem(91);
+    @include mq(md){
+        margin-top: 0;
+    }
+}
+
+
+.detail__content{
     position: relative;
 }
 
-.detail__title{
+.detail__title-img{
     position: absolute;
     top: 2%;
     left: 4%;
@@ -41,6 +59,32 @@
     height: rem(312);
 }
 
+.detail__title-sentence{
+    text-align: center;
+    padding-top: rem(125);
+}
+
+.detail__title-text{
+    font-size: rem(16);
+}
+
+.detail__title-tl{
+    font-size: rem(24);
+    background-color: $green;
+    color: $white;
+    display: inline-block;
+    width: rem(339);
+    margin-top: rem(10);
+    padding: rem(4) 0;
+    border-radius: rem(50);
+}
+
+.detail__main{
+    margin-top: rem(40);
+    @include mq(md){
+        margin-top: 0;
+    }
+}
 
 .detail__case{
     background-color: $green;
@@ -66,17 +110,23 @@
 
 .detail__info{
     margin-top: rem(80);
+    @include mq(md){
+        margin-top: rem(130);
+    }
 }
 
 .detail__buttons{
     margin-top: rem(40);
+    padding-bottom: rem(80);
     @include mq(md){
         margin-top: rem(80);
+        padding-bottom: rem(120);
         display: flex;
         gap: 0 rem(40);
         justify-content: center;    
     }
 }
+
 
 .detail__buttons-second{
     margin-top: rem(25);

@@ -7,9 +7,7 @@
 }
 
 .company-card__item {
-    display: flex;
-    flex-direction: column;
-    padding: 0 rem(23);
+    padding: rem(60) rem(23) rem(46);
     width: 100%;
     position: relative;
     box-shadow: rem(2) rem(2) rem(10) rgba(0, 0, 0, 0.25);
@@ -17,12 +15,14 @@
         width: 50%;
         padding: 0 rem(40);
         box-shadow: none;
+        display: flex;
+        flex-direction: column;
     }
 }
 
 .company-card__item:first-child {
     @include mq(md){
-        border-right: 1px solid #000;
+        border-right: 1px solid $black;
     }
 }
 
@@ -33,17 +33,31 @@
     }
 }
 
-.company-card__head{
+.company-card__head {
     position: absolute;
-    top: rem(-170);
-    left: 8%;
+    top: -3.5%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 82%;
+    @include mq(md){
+        top: rem(-170);
+        left: 7%; /* レスポンシブで左寄せに戻す */
+        transform: none; /* transformを無効にする */
+        width: 93%;
+        height: 10%;
+    }
 }
 
 .company-card__head img {
-    width: 92.5%;
-    height: 100%;
+    width: 100%;
+    height: rem(100);
     object-fit: cover;
+    @include mq(md){
+        width: 92.5%;
+        height:100%;
+    }
 }
+
 
 .company-card__subtitle{
     font-size: rem(13.81);
@@ -53,38 +67,59 @@
 }
 
 .company-card__title{
-    width: 120%;
+    width: 100%;
     position: relative;
     margin-top: rem(20);
+    @include mq(md){
+        width: 120%;
+    }
 }
 
 .company-card__title img {
-    width: rem(613);
-    height: rem(95);
-    position: absolute;
-    top: 0%;
-    left: -17%;
+    @include mq(md){
+        width: rem(613);
+        height: rem(95);
+        position: absolute;
+        top: 0%;
+        left: -17%;
+    }
 }
 
 .company-card__title-right{
-    width: 120%;
+    width: 100%;
     position: relative;
     margin-top: rem(20);
+    @include mq(md){
+        width: 120%;
+    }
 }
 
 .company-card__title-right img {
-    width: rem(613);
-    height: rem(95);
-    position: absolute;
-    top: 0%;
-    right: 0%;
+    @include mq(md){
+        width: rem(613);
+        height: rem(95);
+        position: absolute;
+        top: 0%;
+        right: 0%;
+    }
+}
+
+.company-card__title-text{
+    background-color: #F6F6F6;
+    padding: rem(13) 0;
+    font-size: rem(23.1);
+    width: calc(100% + 2.96rem); /* 必要に応じて調整 */
+    box-sizing: border-box; /* パディングやボーダーをサイズ計算に含める */
+    margin-left: -1.495rem; /* 3.125rem の半分を左にマージンとして設定 */
+    margin-right: -1.5rem; /* 3.125rem の半分を右にマージンとして設定 */
 }
 
 .company-card__img{
-    margin-top: rem(140);
-    width: rem(293);
-    height: rem(156);
+    margin-top: rem(30);
+    width: 100%;
+    height: 100%;
     @include mq(md){
+        margin-top: rem(140);
         width: 100%;
         height: rem(272);
     }
@@ -112,24 +147,31 @@
 }
 
 .company-card__wrapper {
-    flex: 1;
     background-color: #F3F3F3;
     border-radius: rem(5);
     text-align: left;
-    margin-top: rem(30);
-    padding: rem(46) rem(20) rem(34);
+    margin: rem(30) 0 ;
+    padding: rem(26) rem(20) rem(20);
     position: relative;
     @include mq(md){
-        margin-top: rem(60);
+        flex: 1;
+        margin: rem(60) 0 rem(30) ;
+        padding: rem(46) rem(20) rem(34);
+
     }
 }
 
 .company-recommendation{
-    width: rem(234);
-    height: rem(90);
+    width: rem(134);
+    height: rem(56);
     position: absolute;
-    top: rem(-60);
+    top: rem(-35);
     left: rem(10);
+    @include mq(md){
+        width: rem(234);
+        height: rem(90);
+        top: rem(-60);
+    }
 }
 
 .company-card__dl{
@@ -175,4 +217,13 @@
 
 .company-card__text span {
     background: linear-gradient(transparent 75%, #01C48C 75%);
+}
+
+
+/*ボタン*/
+.company-card__buttons {
+    margin-top: rem(20);
+    @include mq(md){
+        margin-top: rem(40);
+    }
 }

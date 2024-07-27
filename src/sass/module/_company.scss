@@ -1,49 +1,67 @@
 @use "global" as *;
 
-.company{
-    // background-image: url(../images/common/company-head.png);
-    // background-position: center;
-    // background-repeat: no-repeat;
-    // background-size: rem(1543) rem(914);
-}
-
-.company{
-    position: relative;
-}
-
-.company::before {
+.company {
+    background-image: url(../images/common/company-head-sp.png);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: rem(761) rem(227);
     @include mq(md){
-        background-image: url(../images/common/company-left-icon.png);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: contain;
-        position: absolute;
-        content: "";
-        top: rem(400);
+        background-image: url(../images/common/company-head.png);
+        background-size: rem(1543) rem(453);
+    }
+}
+
+.company-left-icon{
+    position: relative;
+    max-width: rem(500);
+    margin: auto;
+    @include mq(md){
+        max-width: 100%;
+    }
+}
+
+.company-left-icon::before {
+    background-image: url(../images/common/company-left-icon.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    content: "";
+    top: rem(190);
+    left: calc(50% - min(50%, 43%));
+    width: rem(60);
+    height: rem(105);
+    z-index: 5;
+
+    @include mq(md){
+        top: rem(330);
         left: calc(50% - min(50%, rem(670)));
         width: rem(141);
         height: rem(200);
-        z-index: 100;
     }
 } 
 
-.company-right{
+.company-right-icon{
     position: relative;
 }
 
-.company-right::before {
+.company-right-icon::before {
+    background-image: url(../images/common/company-right-icon.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    content: "";
+    top: rem(1290);
+    right: calc(50% - min(50%, 45%));
+    width: rem(63);
+    height: rem(91);
+    z-index: 5;
     @include mq(md){
-        background-image: url(../images/common/company-right-icon.png);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: contain;
-        position: absolute;
-        content: "";
         top: rem(350);
         right: calc(50% - min(50%, rem(670)));
         width: rem(129);
         height: rem(185);
-        z-index: 100;
     }
 } 
 
@@ -58,13 +76,15 @@
     }
 }
 
-.company__container{
+.company__container {
+    background-color: $white;
     text-align: center;
     width: 100%;
-    margin:rem(143) auto auto auto;
-    padding: rem(106) 0 rem(40) ;
-    @include mq(md){
+    margin: rem(170) auto auto auto;
+    @include mq(md) {
         box-shadow: rem(2) rem(2) rem(10) rgba(0, 0, 0, 0.25);
         width: 90%;
+        padding: rem(106) 0 rem(40);
+        margin: rem(143) auto auto auto;
     }
 }

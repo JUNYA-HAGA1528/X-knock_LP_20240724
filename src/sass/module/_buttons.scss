@@ -1,0 +1,97 @@
+@use "global" as *;
+
+/*黒ボタン*/
+.buttons{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.buttons__text {
+    font-size: rem(9.21);
+    color: $black;
+    border: solid 1px $black;
+    display: inline-block;
+    width: rem(126);
+    padding: rem(1) 0;
+    border-radius: rem(50);
+    position: absolute; 
+    top: 0%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    background-color: #fff; 
+    @include mq(md){
+        font-size: rem(16);
+        width: rem(220);
+        padding: rem(2.5) 0;
+    }
+}
+
+.buttons__button {
+    position: relative;
+    z-index: 1;
+    background-color: $black;
+    color: #fff;
+    display: inline-block;
+    width: rem(247);
+    padding: rem(12) 0;
+    @include mq(md){
+        width: rem(439);
+        padding: rem(20.5) 0;
+        font-size: rem(28);
+    }
+}
+
+.buttons__button span {
+    font-size: rem(16);
+    text-decoration: underline;
+    @include mq(md){
+        font-size: rem(28);
+    }
+}
+
+
+
+
+
+
+/*緑ボタン*/
+.buttons__text-green {
+    font-size: rem(9.21);
+    color: #01C48C;
+    border: solid 1px #01C48C;
+    display: inline-block;
+    width: rem(126);
+    padding: rem(1) 0;
+    border-radius: rem(50);
+    position: absolute; 
+    top: 0%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    background-color: $white; 
+    @include mq(md){
+        font-size: rem(16);
+        width: rem(220);
+        padding: rem(2.5) 0;
+    }
+}
+
+.buttons__button-green {
+    position: relative;
+    z-index: 1;
+    background-color: #01C48C;
+    color: #fff;
+    display: inline-block;
+    width: rem(247);
+    padding: rem(12) 0;
+    font-size: rem(16);
+    @include mq(md){
+        width: rem(439);
+        padding: rem(20.5) 0;
+        font-size: rem(28);
+    }
+}

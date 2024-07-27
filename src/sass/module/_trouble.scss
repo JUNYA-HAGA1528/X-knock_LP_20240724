@@ -55,26 +55,25 @@
     }
 }
 
-.trouble__left-text{
-    text-align: center;
+.trouble__source{
+    margin-top: rem(3);
+    display: flex;
+    justify-content: center;
+    font-size: rem(9);
     color: $white;
-    margin-top: rem(10);
-    font-size: rem(10);
     @include mq(md){
-        font-size: rem(10);
-        margin-top: rem(20);
+        font-size: rem(12);
     }
 }
 
-.trouble__left-text a {
-    transition: 0.3s;
+.trouble__source-text{
+    text-decoration: underline;
 }
 
-.trouble__left-text a:hover {
+.trouble__source-text a:hover{
+    transition: 0.3s;
     opacity: 0.5;
 }
-
-
 
 .trouble__right{
     width: 100%;

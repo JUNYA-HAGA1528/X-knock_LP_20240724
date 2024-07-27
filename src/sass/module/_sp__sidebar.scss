@@ -1,0 +1,22 @@
+@use "global" as *;
+
+.sp-sidebar{
+    margin-top: rem(40);
+    
+}
+
+.sp-sidebar__inner{
+    max-width: rem(400);
+    margin: auto;
+    padding: 0 rem(25);
+}
+
+.sp-sidebar__img + .sp-sidebar__img{
+    margin-top: rem(20);
+}
+
+.sp-sidebar__footer{
+    margin-top: rem(40);
+    background-color: #08FF03;
+    height: rem(150);
+}

@@ -70,7 +70,6 @@
     max-width: $max-width;
     margin: auto;
     padding: 0 rem(25);
-    font-weight: $bold;
     @include mq(md){
         max-width: rem(1356);
     }

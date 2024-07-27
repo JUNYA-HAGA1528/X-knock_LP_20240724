@@ -60,7 +60,6 @@
     color: $white;
     margin-top: rem(10);
     font-size: rem(10);
-    font-weight: $bold;
     @include mq(md){
         font-size: rem(10);
         margin-top: rem(20);
@@ -89,7 +88,6 @@
 .trouble__right-text{
     color: $white;
     font-size: rem(16);
-    font-weight: $bold;
     line-height: 2;
     letter-spacing: 0.01em;
     @include mq(md){
@@ -149,7 +147,6 @@
 .trouble__bg-text {
     padding: 0 rem(38);
     font-size: rem(16);
-    font-weight: $bold;
     line-height: 1.75;
     @include mq(md){
         padding: 0 rem(33);

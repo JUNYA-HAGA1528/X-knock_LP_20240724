@@ -81,7 +81,6 @@
 .about__text-center,
 .about__text-bottom{
     font-size: rem(16);
-    font-weight: $bold;
     line-height: 2;
 }
 
@@ -140,7 +139,6 @@
 
 .about__left-title {
     font-size: rem(20);
-    font-weight: $bold;
     color: #01C48C;
     text-align: center;
 }
@@ -149,7 +147,6 @@
     margin-top: rem(7);
     padding: 0 rem(25);
     font-size: rem(16);
-    font-weight: $bold;
     line-height: 1.75;
     @include mq(md){
         padding: 0 rem(46);
@@ -159,7 +156,6 @@
 .about__subtitle{
     color:#01C48C ;
     font-size: rem(20);
-    font-weight: $bold;
     margin-left: rem(41);
     @include mq(md){
         margin-top: rem(20);

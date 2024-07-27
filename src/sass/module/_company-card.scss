@@ -139,7 +139,10 @@
     margin-top: rem(3);
     display: flex;
     justify-content: center;
-    font-size: rem(12);
+    font-size: rem(9);
+    @include mq(md){
+        font-size: rem(12);
+    }
 }
 
 .company-card__source-text{

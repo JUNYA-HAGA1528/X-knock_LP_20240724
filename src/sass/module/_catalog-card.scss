@@ -2,19 +2,17 @@
 
 .catalog-card {
     color: #00845F;
-    font-weight: bold; /* $bold 変数を直接 bold に置き換え */
     border-radius: rem(5);
     display: flex;
     flex-direction: column;
-    flex: 1 1 auto; /* カードの高さを揃える */
-    min-height: 100%; /* 高さを揃える */
-    box-sizing: border-box; /* パディングとボーダーを含めたサイズ調整 */
+    flex: 1 1 auto;
+    min-height: 100%;
+    box-sizing: border-box;
 }
 
 .catalog-card__title {
     text-align: center;
     font-size: rem(17.11);
-    font-weight: bold;
     line-height: 1.35;
     padding-bottom: rem(10);
     @include mq(md) {

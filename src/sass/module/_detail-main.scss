@@ -1,0 +1,47 @@
+@use "global" as *;
+
+.detail-main__inner{
+    max-width: $max-width;
+    margin: auto;
+    padding: 0 rem(25);
+    @include mq(md){
+        max-width: rem(850);
+    }
+}
+
+.detail-main__img{
+    width: rem(800);
+    height: rem(398);
+    margin: auto;
+}
+
+.detail-main__img img {
+    aspect-ratio: 800/398;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.detail-main__source{
+    margin-top: rem(3);
+    display: flex;
+    justify-content: center;
+    font-size: rem(10);
+    @include mq(md){
+        font-size: rem(12);
+    }
+}
+
+.detail-main__source-text{
+    text-decoration: underline;
+}
+
+.detail-main__text{
+    margin-top: rem(30);
+    font-size: rem(16);
+    color: $white;
+    @include mq(md){
+        margin-top: rem(40);
+        font-size: rem(20);
+    }
+}

@@ -101,6 +101,7 @@
     font-size: rem(16);
     line-height: 1.8;
     background-color: $white;
+    color:#302B63 ;
     padding: rem(86) rem(23) rem(20) rem(20);
     @include mq(md){
         font-size: rem(20);
@@ -122,9 +123,11 @@
 }
 
 .price__sentence {
+    margin-top: rem(60);
     @include mq(md){
         display: flex;
         justify-content: center;
+        margin-top: rem(107);
     }
 }
 
@@ -132,14 +135,12 @@
     font-size: rem(16);
     background-color: $white;
     text-align: left;
-    margin-top: rem(60);
     padding: rem(30) rem(20);
     border-radius: rem(5);
     line-height: 2;
     @include mq(md){
         font-size: rem(20);
-        margin-top: rem(107);
-        padding: rem(20) rem(53);
+        padding: rem(20) rem(50);
         line-height: 1.75;
     }
 }

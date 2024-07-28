@@ -91,7 +91,9 @@
     display: flex;
     justify-content: center;
     font-size: rem(10);
+    color: #000;
     @include mq(md) {
+        margin-top: rem(16);
         font-size: rem(12);
     }
 }

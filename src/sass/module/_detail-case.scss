@@ -9,7 +9,7 @@
         background-image: url(../images/common/detail-case-bg.png);
         background-position: center;
         background-repeat: no-repeat;
-        background-size: rem(1200) rem(3741);    
+        background-size: cover;    
     }
 }
 
@@ -28,7 +28,7 @@
     @include mq(md){
         display: flex;
         gap: 0 rem(40);
-        padding: rem(120) 0 rem(40);
+        padding: rem(129) 0 rem(40);
     }
 }
 
@@ -52,7 +52,7 @@
 
 .detail-case__speech {
     position: absolute;
-    top: rem(-30);
+    top: rem(-45);
     left: 5%;
     width: rem(150);
     height: rem(70);

@@ -38,7 +38,17 @@
     }
 }
 
-.detail__item + .detail__item{
+.detail__item-second{
+    background-image: url(../images/common/detail-sp2.png);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover ;
+    @include mq(md){
+        background-image: none;
+    }
+}
+
+.detail__item-second{
     margin-top: rem(91);
     @include mq(md){
         margin-top: 0;
@@ -61,7 +71,7 @@
 
 .detail__title-sentence{
     text-align: center;
-    padding-top: rem(125);
+    padding-top: rem(130);
 }
 
 .detail__title-text{

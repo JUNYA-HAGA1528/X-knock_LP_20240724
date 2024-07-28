@@ -9,6 +9,10 @@
     flex-direction: column;
 }
 
+.buttons a:hover{
+    opacity: 1;
+}
+
 .buttons__text {
     font-size: rem(9.21);
     color: $black;
@@ -36,17 +40,43 @@
     position: relative;
     z-index: 1;
     background-color: $black;
-    color: #fff;
+    color: $white;
     display: inline-block;
     width: rem(247);
-    padding: rem(12) 0;
-    border-radius: rem(5); 
-    @include mq(md){
-        width: rem(431);
+    padding: rem(12) 0; 
+    border-radius: rem(5);
+    overflow: hidden; 
+    transition: color 0.5s, background-color 0.5s; 
+
+    @include mq(md) {
+        width: rem(431); 
         padding: rem(20.5) 0;
         font-size: rem(28);
     }
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background-color: $white;
+        transition: left 0.3s;
+        z-index: -1;
+    }
+
+    &:hover::before {
+        left: 0;
+    }
+
+    &:hover {
+        background-color: $white;
+        color: $black;
+        border: solid 1px  $black;
+    }
 }
+
 
 .buttons__button span {
     font-size: rem(16);
@@ -87,13 +117,37 @@
     color: #fff;
     display: inline-block;
     width: rem(247);
-    padding: rem(12) 0;
-    font-size: rem(16);
-    border-radius: rem(5); 
-    @include mq(md){
-        width: rem(439);
+    padding: rem(12) 0; 
+    border-radius: rem(5);
+    overflow: hidden; 
+    transition: color 0.5s, background-color 0.5s; 
+
+    @include mq(md) {
+        width: rem(431); 
         padding: rem(20.5) 0;
         font-size: rem(28);
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        transition: left 0.3s;
+        z-index: -1; 
+    }
+
+    &:hover::before {
+        left: 0;
+    }
+
+    &:hover {
+        background-color: #fff;
+        color: $green;
+        border: solid 1px $green ;
     }
 }
 

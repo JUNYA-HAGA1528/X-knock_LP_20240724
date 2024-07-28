@@ -6,11 +6,11 @@
     <meta name="format-detection" content="telephone=no" />
     <meta name="robots" content="noindex" />
     <!-- meta情報 -->
-    <title>タケモトデンキ株式会社</title>
+    <title>【PR】熊本電気代削減パーフェクトガイド</title>
     <meta name="description" content="" />
     <meta name="keywords" content="" />
     <!-- ogp -->
-    <meta property="og:title" content="" />
+    <meta property="og:title" content="【PR】熊本電気代削減パーフェクトガイド" />
     <meta property="og:type" content="" />
     <meta property="og:url" content="" />
     <meta property="og:image" content="" />
@@ -41,7 +41,32 @@
         })(document);
     </script>
 
+    <!--「続きをよむ」のタブの設置-->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var checkboxes = document.querySelectorAll('.information__content input[type="checkbox"]');
+            checkboxes.forEach(function(checkbox) {
+                var label = document.querySelector('label[for="' + checkbox.id + '"]');
+                var container = checkbox.parentElement.querySelector('.information__img');
+                var textbox = container.parentElement;
 
+                label.addEventListener('click', function() {
+                    if (checkbox.checked) {
+                        checkbox.checked = false;
+                        label.style.display = 'block';
+                        container.style.height = '100px';
+                        textbox.classList.remove('opened'); // 開いたときのクラスを削除
+                    } else {
+                        checkbox.checked = true;
+                        label.style.display = 'none';
+                        container.style.height = container.scrollHeight + 'px';
+                        textbox.classList.add('opened'); // 開いたときのクラスを追加
+                    }
+                });
+            });
+        });    
+    </script>      
+    
 
 </head>
 <body>
@@ -462,33 +487,7 @@
 
         <!----------------
             favorite
-        ------------------>
-            <!--「続きをよむ」のタブの設置-->
-            <script>
-                document.addEventListener('DOMContentLoaded', function() {
-                    var checkboxes = document.querySelectorAll('.information__content input[type="checkbox"]');
-                    checkboxes.forEach(function(checkbox) {
-                        var label = document.querySelector('label[for="' + checkbox.id + '"]');
-                        var container = checkbox.parentElement.querySelector('.information__img');
-                        var textbox = container.parentElement;
-        
-                        label.addEventListener('click', function() {
-                            if (checkbox.checked) {
-                                checkbox.checked = false;
-                                label.style.display = 'block';
-                                container.style.height = '100px';
-                                textbox.classList.remove('opened'); // 開いたときのクラスを削除
-                            } else {
-                                checkbox.checked = true;
-                                label.style.display = 'none';
-                                container.style.height = container.scrollHeight + 'px';
-                                textbox.classList.add('opened'); // 開いたときのクラスを追加
-                            }
-                        });
-                    });
-                });    
-            </script>      
-        
+        ------------------>        
         <section class="top-favorite favorite">
             <div class="favorite__inner">
                 <div class="favorite__container">
@@ -1388,7 +1387,7 @@
                     </div>
                     <div class="catalog__sentence">
                         <p class="catalog__area">熊本市エリア・県北エリア</p>
-                        <h2 class="catalog__chart">太陽光発電・蓄電池 <br class="u-mobile">施工・販売会社一覧</h2>
+                        <h2 class="catalog__chart">太陽光発電・蓄電池 <br>施工・販売会社一覧</h2>
                     </div>
                     <div class="catalog__right-img">
                         <img src="./assets/images/common/section-right-white.png" alt="タイトル横の棒">
@@ -1401,7 +1400,7 @@
                         <dl class="catalog-card__wrapper">
                             <div class="catalog-card__list">
                                 <dt>所在地</dt>
-                                <dd>〒861-4106&emsp;熊本県熊本市<br class="u-mobile">南区南高江-6-58</dd>
+                                <dd>〒861-4106&emsp;熊本県熊本市<br>南区南高江-6-58</dd>
                             </div>
                             <div class="catalog-card__list">
                                 <dt>URL</dt>
@@ -1415,7 +1414,7 @@
                         <dl class="catalog-card__wrapper">
                             <div class="catalog-card__list">
                                 <dt>所在地</dt>
-                                <dd>〒822-0001&emsp;福岡県直⽅市<br class="u-mobile">⼤字感⽥2433-1</dd>
+                                <dd>〒822-0001&emsp;福岡県直⽅市<br>⼤字感⽥2433-1</dd>
                             </div>
                             <div class="catalog-card__list">
                                 <dt>URL</dt>
@@ -1429,7 +1428,7 @@
                         <dl class="catalog-card__wrapper">
                             <div class="catalog-card__list">
                                 <dt>所在地</dt>
-                                <dd>〒862-0965&emsp;熊本県熊本市<br class="u-mobile">南区田井島2-3-8</dd>
+                                <dd>〒862-0965&emsp;熊本県熊本市<br>南区田井島2-3-8</dd>
                             </div>
                             <div class="catalog-card__list">
                                 <dt>URL</dt>
@@ -1443,7 +1442,7 @@
                         <dl class="catalog-card__wrapper">
                             <div class="catalog-card__list">
                                 <dt>所在地</dt>
-                                <dd>〒866-0053&emsp;熊本県八代市<br class="u-mobile">千反町1-7-5</dd>
+                                <dd>〒866-0053&emsp;熊本県八代市<br>千反町1-7-5</dd>
                             </div>
                             <div class="catalog-card__list">
                                 <dt>URL</dt>
@@ -1457,7 +1456,7 @@
                         <dl class="catalog-card__wrapper">
                             <div class="catalog-card__list">
                                 <dt>所在地</dt>
-                                <dd>〒862-0973&emsp;熊本県熊本市<br class="u-mobile">中央区大江本町6-5-1002</dd>
+                                <dd>〒862-0973&emsp;熊本県熊本市<br>中央区大江本町6-5-1002</dd>
                             </div>
                             <div class="catalog-card__list">
                                 <dt>URL</dt>
@@ -1471,7 +1470,7 @@
                         <dl class="catalog-card__wrapper">
                             <div class="catalog-card__list">
                                 <dt>所在地</dt>
-                                <dd>〒862-0965&emsp;熊本県熊本市<br class="u-mobile">南区田井島1-2-1</dd>
+                                <dd>〒862-0965&emsp;熊本県熊本市<br>南区田井島1-2-1</dd>
                             </div>
                             <div class="catalog-card__list">
                                 <dt>URL</dt>
@@ -1485,7 +1484,7 @@
                         <dl class="catalog-card__wrapper">
                             <div class="catalog-card__list">
                                 <dt>所在地</dt>
-                                <dd>〒861-4211&emsp;熊本県熊本市<br class="u-mobile">南区城南町今吉野1295</dd>
+                                <dd>〒861-4211&emsp;熊本県熊本市<br>南区城南町今吉野1295</dd>
                             </div>
                             <div class="catalog-card__list">
                                 <dt>URL</dt>
@@ -1499,7 +1498,7 @@
                         <dl class="catalog-card__wrapper">
                             <div class="catalog-card__list">
                                 <dt>所在地</dt>
-                                <dd>〒860-0078&emsp;熊本県熊本市<br class="u-mobile">中央区京町1-14-31</dd>
+                                <dd>〒860-0078&emsp;熊本県熊本市<br>中央区京町1-14-31</dd>
                             </div>
                             <div class="catalog-card__list">
                                 <dt>URL</dt>
@@ -1513,7 +1512,7 @@
                         <dl class="catalog-card__wrapper">
                             <div class="catalog-card__list">
                                 <dt>所在地</dt>
-                                <dd>〒300-0414&emsp;熊本県熊本市<br class="u-mobile">南区幸田1-7-15</dd>
+                                <dd>〒300-0414&emsp;熊本県熊本市<br>南区幸田1-7-15</dd>
                             </div>
                             <div class="catalog-card__list">
                                 <dt>URL</dt>
@@ -1527,7 +1526,7 @@
                         <dl class="catalog-card__wrapper">
                             <div class="catalog-card__list">
                                 <dt>所在地</dt>
-                                <dd>〒860-0083&emsp;熊本県熊本市<br class="u-mobile">北区大窪4-2-6</dd>
+                                <dd>〒860-0083&emsp;熊本県熊本市<br>北区大窪4-2-6</dd>
                             </div>
                             <div class="catalog-card__list">
                                 <dt>URL</dt>
@@ -1541,7 +1540,7 @@
                         <dl class="catalog-card__wrapper">
                             <div class="catalog-card__list">
                                 <dt>所在地</dt>
-                                <dd>〒861-0151&emsp;熊本県熊本市<br class="u-mobile">北区木留643-2</dd>
+                                <dd>〒861-0151&emsp;熊本県熊本市<br>北区木留643-2</dd>
                             </div>
                             <div class="catalog-card__list">
                                 <dt>URL</dt>
@@ -1555,7 +1554,7 @@
                         <dl class="catalog-card__wrapper">
                             <div class="catalog-card__list">
                                 <dt>所在地</dt>
-                                <dd>〒861-4101&emsp;熊本県熊本市<br class="u-mobile">南区近見8-7-40</dd>
+                                <dd>〒861-4101&emsp;熊本県熊本市<br>南区近見8-7-40</dd>
                             </div>
                             <div class="catalog-card__list">
                                 <dt>URL</dt>
@@ -1569,7 +1568,7 @@
                         <dl class="catalog-card__wrapper">
                             <div class="catalog-card__list">
                                 <dt>所在地</dt>
-                                <dd>〒866-0893&emsp;熊本県八代市<br class="u-mobile">海士江町3318−1 西田ビル101</dd>
+                                <dd>〒866-0893&emsp;熊本県八代市<br>海士江町3318−1 西田ビル101</dd>
                             </div>
                             <div class="catalog-card__list">
                                 <dt>URL</dt>
@@ -1583,7 +1582,7 @@
                         <dl class="catalog-card__wrapper">
                             <div class="catalog-card__list">
                                 <dt>所在地</dt>
-                                <dd>〒861-8041&emsp;熊本県熊本市<br class="u-mobile">東区戸島1-1-72</dd>
+                                <dd>〒861-8041&emsp;熊本県熊本市<br>東区戸島1-1-72</dd>
                             </div>
                             <div class="catalog-card__list">
                                 <dt>URL</dt>
@@ -1597,7 +1596,7 @@
                         <dl class="catalog-card__wrapper">
                             <div class="catalog-card__list">
                                 <dt>所在地</dt>
-                                <dd>〒860-0831&emsp;熊本県熊本市<br class="u-mobile">中央区八王寺町43-16</dd>
+                                <dd>〒860-0831&emsp;熊本県熊本市<br>中央区八王寺町43-16</dd>
                             </div>
                             <div class="catalog-card__list">
                                 <dt>URL</dt>
@@ -1611,7 +1610,7 @@
                         <dl class="catalog-card__wrapper">
                             <div class="catalog-card__list">
                                 <dt>所在地</dt>
-                                <dd>〒860-0834&emsp;熊本県熊本市<br class="u-mobile">南区江越1-6-22</dd>
+                                <dd>〒860-0834&emsp;熊本県熊本市<br>南区江越1-6-22</dd>
                             </div>
                             <div class="catalog-card__list">
                                 <dt>URL</dt>

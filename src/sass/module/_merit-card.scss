@@ -198,13 +198,6 @@
     }
 }
   
-.merit-card__button a{
-    opacity: 1;
-}
-  
-.merit-card__button a:hover{
-    opacity: 1;
-}
 
 .merit-card__button span {
     margin-left: rem(-20);
@@ -231,4 +224,9 @@
         width: rem(25);
         height: rem(25);    
     }
+}
+
+.merit-card__buttons a:hover{
+    opacity: 1;
+    letter-spacing: 0.15em;
 }

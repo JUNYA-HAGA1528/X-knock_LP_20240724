@@ -167,6 +167,11 @@
     transform: translateY(-50%);
   }
 
+  .fv-sp__bottom-button:hover{
+    opacity: 1;
+    transform: scale(1.05); /* ボタンをホバーしたときに拡大する */
+}
+
 .fv-sp__bottom-text{
     padding-top: rem(10);
     text-align: center;

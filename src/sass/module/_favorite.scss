@@ -2,15 +2,48 @@
 
 .favorite{
     background-color: #DFEED7;
+    position: relative;
+    overflow: hidden;
+}
+
+.favorite__head-logo{
+    position: absolute;
+    top: 50%;
+    right: -9.5%;
+    width: rem(134);
+    height: rem(92);
 }
 
 .favorite__inner{
     max-width: $max-width;
     margin: auto;
+    padding-top: rem(80);
     @include mq(md){
         max-width: rem(1440);
+        padding: 0;
     }
 }
+
+.favorite__container{
+    position: relative;
+}
+
+.favorite__container::before {
+    background-image: url(../images/common/favorite-head-icon.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    content: "";
+    bottom: 75%;
+    left: calc(50% - min(54%, rem(640)));
+    width: rem(134);
+    height: rem(92);
+    z-index: 100;
+    @include mq(md){
+        background-image: none;
+    }
+} 
 
 .favorite__bg{
     position: relative;
@@ -33,9 +66,61 @@
 }
 
 
-.favorite__container{
+.favorite__head{
+    background-color: $white;
+    margin-left: rem(20);
+    padding: rem(20) 0 rem(30) rem(16);
+    position: relative;
+}
+
+.favorite__logo{
+    font-size: rem(14);
+    font-family: $second-font-family;
+    position: absolute;
+    top: -9%;
+    left: 5%;
+}
+
+.favorite__title-tl{
+    font-size: rem(18);
+}
+
+.favorite__title-tl span {
+    font-size: rem(24);
+}
+
+.favorite__title-sub{
+    font-size: rem(20);
+    background-color: $black;
+    color: white;
+    margin-top: rem(10);
+    padding: 0 rem(10);
+    display: inline-block;
+}
+
+.favorite__title-sub span {
+    position: relative;
+}
+
+.favorite__title-sub span::after {
+    background-image: url(../images/common/favorite-head-arrow.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: "";
+    position: absolute;
+    top: 218%;
+    left: 15%;
+    width: rem(50);
+    height: rem(93);
+    transform: translateY(-50%);
+    transition: 0.2s background-color;
+}
+
+.favorite__content{
     max-width: $max-width;
     margin: auto;
+    padding-top: rem(95);
     @include mq(md){
         max-width: rem(1025);
         padding-top: rem(457);

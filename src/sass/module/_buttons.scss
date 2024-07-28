@@ -23,7 +23,7 @@
     transform: translate(-50%, -50%);
     z-index: 2;
     background-color: #fff;
-    border-radius: rem(5); 
+    border-radius: rem(50); 
     text-align: center;
     @include mq(md){
         font-size: rem(16);
@@ -55,10 +55,6 @@
         font-size: rem(28);
     }
 }
-
-
-
-
 
 
 /*緑ボタン*/
@@ -97,6 +93,36 @@
     @include mq(md){
         width: rem(439);
         padding: rem(20.5) 0;
+        font-size: rem(28);
+    }
+}
+
+
+
+.buttons__button--detail,
+.buttons__button-green--detail{
+    width: rem(340);
+    padding: rem(20) 0;
+    @include mq(md){
+        width: rem(431);
+        padding: rem(20.5) 0;
+    }
+}
+
+.buttons__text--detail,
+.buttons__text-green--detail{
+    width: rem(173);
+    font-size: rem(12);
+    @media screen {
+        width: rem(220);
+        font-size: rem(16);
+    }
+}
+
+.buttons__button--detail span,
+.buttons__button-green--detail span {
+    font-size: rem(22);
+    @include mq(md){
         font-size: rem(28);
     }
 }

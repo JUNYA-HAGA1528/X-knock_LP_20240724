@@ -52,11 +52,12 @@
 
 .detail-case__speech {
     position: absolute;
-    top: rem(-45);
+    top: rem(-40);
     left: 5%;
     width: rem(150);
     height: rem(70);
     @include mq(md){
+        top: rem(-45);
         width: rem(188);
         height: rem(89);
     }

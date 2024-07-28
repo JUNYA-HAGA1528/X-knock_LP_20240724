@@ -124,11 +124,8 @@
     margin-top: rem(23);    
     display: flex;
     justify-content: center;
-    font-size: rem(9);
+    font-size: rem(13);
     color: $white;
-    @include mq(md){
-        font-size: rem(12);
-    }
 }
 
 .reviews-card__source-text{

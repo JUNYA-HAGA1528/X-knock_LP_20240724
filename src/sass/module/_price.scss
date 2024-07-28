@@ -103,6 +103,7 @@
     background-color: $white;
     color:#302B63 ;
     padding: rem(86) rem(23) rem(20) rem(20);
+    border-radius: rem(3);
     @include mq(md){
         font-size: rem(20);
         padding: rem(120) rem(17) rem(20) rem(24);

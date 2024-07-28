@@ -2,7 +2,7 @@
 
 .point__cards{
     text-align: center;
-    margin-top: rem(60);
+    margin-top: rem(63);
     @include mq(md){
         margin-top: rem(103);
         display: flex;
@@ -19,7 +19,7 @@
 }
 
 .point__cards-item + .point__cards-item{
-    margin-top: rem(60);
+    margin-top: rem(63);
     @include mq(md){
         margin-top: 0;
         margin-left: rem(40);

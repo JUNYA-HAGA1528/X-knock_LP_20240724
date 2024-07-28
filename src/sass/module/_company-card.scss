@@ -61,8 +61,10 @@
 
 .company-card__subtitle{
     font-size: rem(13.81);
+    line-height: 1.75;
     @include mq(md){
         font-size: rem(24);
+        line-height: 1;
     }
 }
 

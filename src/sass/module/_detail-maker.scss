@@ -13,6 +13,19 @@
     }
 }
 
+.detail-maker--second {
+    background-image: url(../images/common/detail-maker-bg-sp.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: rem(500) rem(1268);    
+    padding: rem(40) 0 rem(80);
+    @include mq(md) {
+        background-image: url(../images/common/detail-maker-bg.png);
+        background-size: rem(1204) rem(792);
+        padding: rem(78) 0;
+    }
+}
+
 .detail-maker__inner {
     max-width: $max-width;
     margin: auto;
@@ -67,10 +80,12 @@
     background-color: $white;
     margin-top: rem(40);
     padding: rem(18) rem(20);
+    line-height: 1.8;
     @include mq(md){
         display: flex;
         justify-content: center;
         gap: 0 rem(24);
+        line-height: 1;
     }
 }
 

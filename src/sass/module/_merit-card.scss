@@ -1,5 +1,11 @@
 @use 'global' as *;
 
+.merit-card {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
 .merit-card__title{
     background-color: #3BD2A6;
     color: $white;
@@ -56,8 +62,13 @@
 .merit-card__container{
     box-shadow: rem(2) rem(2) rem(10) rgba(0, 0, 0, 0.25);
     padding: rem(50) rem(30) rem(30);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* 追加 */
+    flex: 1;
     @include mq(md){
         padding: rem(76) rem(44) rem(44);
+        
     }
 }
 
@@ -66,8 +77,9 @@
     height: rem(144);
     margin: auto;
     @include mq(md){
-        width: rem(290);
-        height: rem(229);
+        width: rem(347);
+        height: rem(284);
+        margin: rem(-20) rem(0) auto auto;
     }
 }
 
@@ -77,7 +89,7 @@
     height: 100%;
     object-fit: cover;
     @include mq(md){
-        aspect-ratio: 290/229;
+        aspect-ratio: 347/284;
     }
 }
 
@@ -88,6 +100,7 @@
     @include mq(md){
         width: rem(288);
         height: rem(228);
+        margin: auto ;
     }
 }
 
@@ -105,16 +118,17 @@
 }
 
 .merit-card__content {
+    flex: 1;
     margin-top: rem(40);
     display: flex;
     flex-direction: column;
+    justify-content: flex-end; /* 下揃えにする */
     @include mq(md){
         margin-top: rem(55);
     }
 }
 
 .merit-card__wrapper {
-    margin-top: auto; /* これにより、下揃えになります */
     padding: rem(14) rem(25);
     @include mq(md){
         padding: rem(20) rem(40);

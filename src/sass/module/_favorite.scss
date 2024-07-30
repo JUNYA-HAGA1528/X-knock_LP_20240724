@@ -109,7 +109,7 @@
     background-size: contain;
     content: "";
     position: absolute;
-    top: 218%;
+    top: 250%;
     left: 15%;
     width: rem(50);
     height: rem(93);
@@ -120,7 +120,7 @@
 .favorite__content{
     max-width: $max-width;
     margin: auto;
-    padding-top: rem(95);
+    padding-top: rem(65);
     @include mq(md){
         max-width: rem(1025);
         padding-top: rem(457);

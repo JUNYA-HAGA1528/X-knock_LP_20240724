@@ -49,17 +49,18 @@
 .price__img{
     width: 100%;
     @include mq(md){
-        width: 38.9830%;
+        margin-top: -3%;
+        width: 35.9830%;
     }
 }
 
 .price__img img {
-    aspect-ratio: 319/248;
+    aspect-ratio: 335/293;
     width: 100%;
     height: 100%;
     object-fit: cover;
     @include mq(md){
-        aspect-ratio: 460/358;
+        aspect-ratio: 453/396;
     }
 }
 

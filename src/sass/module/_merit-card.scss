@@ -66,7 +66,7 @@
     height: rem(153);
     margin: auto;
     @include mq(md){
-        width: rem(358);
+        width: rem(290);
         height: rem(229);
     }
 }
@@ -77,7 +77,7 @@
     height: 100%;
     object-fit: cover;
     @include mq(md){
-        aspect-ratio: 358/229;
+        aspect-ratio: 290/229;
     }
 }
 

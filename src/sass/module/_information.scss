@@ -14,9 +14,9 @@
     background-size: rem(847) rem(185);
     @include mq(md){
         background-image: url(../images/common/information-bg.png);
-        background-position: calc(50% - 150px) calc(100% - 20px);
+        background-position: calc(50% - 110px) bottom;
         background-repeat: no-repeat;
-        background-size: rem(2209) rem(417);
+        background-size: rem(2193) rem(380);
     }
 }
 
